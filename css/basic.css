@@ -20,11 +20,12 @@
 .header ul>li a{
     text-decoration: none;
     color:black;
-    line-height: 100px;
+    line-height: 60px;
     text-align: center;
     padding-right: 25px;
     padding-left:25px;
     display:block;
+
 }
 .home{
     width:1400px;

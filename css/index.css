@@ -20,11 +20,15 @@
 .header ul>li a{
     text-decoration: none;
     color:black;
-    line-height: 100px;
+    line-height: 60px;
     text-align: center;
     padding-right: 25px;
     padding-left:25px;
     display:block;
+}
+.header ul>li a:hover{
+    background-color: gray;
+    color:white;
 }
 .home{
     width:1400px;
@@ -74,6 +78,11 @@
     box-shadow: 2px 1px 4px gray;
     border-radius: 10%;
     position: relative;
+    transition: 0.4s;
+}
+.about-block li:hover{
+    cursor: pointer;
+    box-shadow: 8px 4px 16px gray;
 }
 .about-block li img{
     position: absolute;
@@ -129,6 +138,30 @@
 .skills li .vue{
     margin-top:18px;
 }
+.skill-text{
+    width:100px;
+    height:100px;
+    margin-right: 25px;
+    background-color: black;
+    border: 0.1px solid gray;
+    box-shadow: 2px 1px 4px gray;
+    border-radius: 10%;
+    position: relative;
+    border:1px solid red;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    position: absolute;
+    top:0;
+    left:0;
+    opacity: 75%;
+    transition: 0.5s;
+    display: none;
+}
+.skills li:hover .skill-text{
+    cursor: pointer;
+    display: block;
+}
 .project{
     width:1400px;
     margin: 0 auto;
@@ -149,21 +182,47 @@
     color: black;
     font-weight: bold;
 }
+.project p a:hover{
+    text-decoration: underline;
+}
 .content{
     width:1400px;
     margin: 0 auto;
     margin-top:35px;
     margin-bottom:30px;
     display: flex;
-    justify-content:space-evenly
+    justify-content:space-evenly;
+    animation-duration: 2.3s;
 }
 .content .href{
     width:35%;
     height:370px;
+    position: relative;
 }
 .content .href img{
     width:100%;
     height:100%;
+}
+.content-img-text{
+    width:100%;
+    height:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    background-color: black;
+    opacity: 80%;
+    display: none;
+}
+.content-img-text-1{
+    color:white;
+    text-align: center;
+    display: block;
+    font-size: 38px;
+    line-height: 370px;
+}
+.content .href:hover .content-img-text{
+    display: block;
+    cursor: pointer;
 }
 .content .introduction{
     width:45%;
@@ -183,6 +242,9 @@
 }
 .content .intro-text-4 a{
     text-decoration: none;
+}
+.content .intro-text-4 a:hover{
+    text-decoration: underline;
 }
 .more-info{
     width:1400px;
@@ -209,6 +271,10 @@
     margin-bottom:30px;
     display: flex;
     align-items: center;
+    transition: all 0.8s;
+}
+.feedback:hover{
+    box-shadow: 6px 8px 12px orange ;
 }
 .more-info h1{
     padding-top:15px;
@@ -219,6 +285,9 @@
     font-size:28px;
     line-height: 2;
     text-decoration: none;
+}
+.more-info a:hover{
+    color:orange
 }
 .feed-img{
     width:120px;
