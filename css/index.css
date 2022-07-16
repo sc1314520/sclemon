@@ -27,7 +27,7 @@
     display:block;
 }
 .home{
-    width:100%;
+    width:1400px;
     margin: 0 auto;
     position: relative;
 }
@@ -46,7 +46,7 @@
     padding-bottom:8px;
 }
 .about{
-    width:100%;
+    width:1400px;
     margin: 0 auto;
     margin-bottom:20px;
 }
@@ -93,7 +93,8 @@
 }
 .skills{
     margin-top:30px;
-    width:100%;
+    width:1400px;
+    margin: 0 auto;
     height:230px;
     background-color: black;
 }
@@ -129,7 +130,8 @@
     margin-top:18px;
 }
 .project{
-    width:100%;
+    width:1400px;
+    margin: 0 auto;
 }
 .project h1{
     text-align: center;
@@ -148,7 +150,8 @@
     font-weight: bold;
 }
 .content{
-    width:100%;
+    width:1400px;
+    margin: 0 auto;
     margin-top:35px;
     margin-bottom:30px;
     display: flex;
@@ -182,9 +185,17 @@
     text-decoration: none;
 }
 .more-info{
-    width:100%;
-    
+    width:1400px;
+    margin: 0 auto;
     background-color: rgb(100, 20, 20);
+    position: relative;
+}
+.more .more-a {
+    position: absolute;
+    bottom:12px;
+    right:10px;
+    color: white;
+    font-size: 14px;
 }
 .info-text{
     display:flex;
@@ -228,4 +239,25 @@
     color:white;
     line-height: 1.5;
     overflow: scroll;
+}
+.contact{
+    width:1400px;
+    margin: 0 auto;
+    height:100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact-img{
+    margin-left:40px;
+}
+.contact-img img{
+    width:200px;
+}
+.contact-text{
+    margin-right:40px;
+    color:brown;
+}
+.contact-title{
+    color:black;
 }
