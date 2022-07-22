@@ -195,6 +195,62 @@
     display: flex;
     justify-content: space-evenly;
 }
+.more-info{
+    width:1400px;
+    margin: 0 auto;
+    background-color: rgb(100, 20, 20);
+    position: relative;
+}
+.more .more-a {
+    position: absolute;
+    bottom:12px;
+    right:10px;
+    color: white;
+    font-size: 14px;
+}
+.info-text{
+    display:flex;
+    justify-content: space-around;
+}
+.more-info .feedback{
+    width:32%;
+    padding-top:10px;
+    padding-bottom: 10px;
+    margin-top:10px;
+    margin-bottom:30px;
+    display: flex;
+    align-items: center;
+}
+.more-info h1{
+    padding-top:15px;
+    text-align: center;
+}
+.more-info a{
+    color:white;
+    font-size:28px;
+    line-height: 2;
+    text-decoration: none;
+}
+.feed-img{
+    width:120px;
+    height:120px;
+    border-radius: 120px;
+    margin-left:10px;
+}
+.feed-img img{
+    width:100%;
+}
+.feed-text{
+    text-align: justify;
+    margin-left:20px;
+    width:280px;
+    height:230px;
+    margin-top:10px;
+    margin-bottom:10px;
+    color:white;
+    line-height: 1.5;
+    overflow: scroll;
+}
 .contact{
     width:1400px;
     margin: 0 auto;
