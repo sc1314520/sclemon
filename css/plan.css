@@ -41,111 +41,135 @@
 .home-text{
     position: absolute;
     color:white;
-    top:430px;
+    bottom:120px;
     left:80px;
     
 }
 .home-text h1{
     font-size: 48px;
     padding-bottom:8px;
-}
-.study-main{
-    width:1400px;
-    height:200px;
-    margin: 0 auto;
-    background-image: url(../images/study-bg.jpeg);
-    background-size: 1400px 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color:white
-}
-.study-main h1{
-    padding-top:20px;
-    font-size: 28px;
-    font-weight: bolder;
     text-align: center;
-    margin-bottom:15px;
 }
-.study-main p{
-    font-size: 20px;
-    line-height: 2;
-    text-align: center;
-    margin-bottom:15px;
-}
-.score{
-    width:1400px;
-    margin: 0 auto;
-}
-.score-content{
-    margin-bottom:20px;
-}
-.score>h1{
-    padding-top:20px;
-    font-size: 28px;
-    line-height: 2;
-    font-weight: bolder;
-    color:black;
-    text-align: center;
-    margin-bottom:15px;
-}
-.score h2{
-    border-bottom: 1px solid gray;
-    font-size:24px;
-    font-weight: bold;
-    margin-left:80px;
-    padding-right:25px;
-    line-height:1.5;
-    display:inline-block;
-}
-.score-table1{
-    height:100px;
-    margin-left:80px;
-    margin-top:10px;
-    text-align: center;
-    border:1px solid black;
-}
-.score-table1 th,td{
-    border:0.1px solid gray;
-    line-height: 50px;
-    width:90px;
-}
-
-.study{
+.main{
     width:1400px;
     margin: 0 auto;
     position: relative;
+
 }
-.study-more{
+.date{
     position: absolute;
-    font-size: 18px;
-    right:80px;
-    top:75px;
+    top:50px;
+    right:45px;
 }
-.study-more a{
-    text-decoration: none;
-    color:black;
-}
-.study>h1{
-    padding-top:20px;
+.main>h1{
     font-size: 28px;
-    line-height: 2;
     font-weight: bolder;
-    color:black;
     text-align: center;
-    margin-bottom:15px;
+    line-height: 2;
+    margin-top:8px;
 }
-.study-content{
+.main-box{
+    width: 100%;
     display: flex;
-    justify-content: space-evenly;
-    padding:20px;
+    justify-content: center;
+    align-items: center;
+    margin-top:20px;
+    margin-bottom: 30px;
 }
-.study-img{
-    width:45%;
+.main-box .ic-row{
+    display: block;
+    text-align: center;
+    font-size: 60px;
+    margin-top:15px;
 }
-.study-img img{
+.fed{
+    width: 49%;
+    height:3000px;
+}
+.fed>h1{
+    font-size:24px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 2;
+    margin-top:7px;
+}
+.session-box{
+    border:1px solid gray;
+    height:100px;
+    width:88%;
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-top:10px;
+    box-shadow: 2px 2px 4px gray;
+    border-radius: 10px;
+}
+.session-box>h2{
+    margin-top:10px;
+    text-align: center;
+    font-size: 23px;
+    line-height: 1.8;
+}
+.session-box>h4{
+    text-align: center;
+    font-size: 19px;
+    line-height: 1.8;
+}
+.bed{
+    width: 49%;
+    height:3000px;
+    border-left:0.1px dashed gray;
+
+}
+.bed>h1{
+    font-size:24px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 2;
+    margin-top:7px;
+}
+.split{
+    display: flex;
     width:100%;
-    height:350px;
+}
+.left,.right{
+    width:50%;
+}
+.left>h2,.right>h2{
+    font-size:22px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 2;
+}
+.fc-box{
+    border:5px solid red;
+}
+.fc2-box{
+    border:4px solid yellow;
+}
+.main-why{
+    width:1400px;
+    margin: 0 auto;
+    height:410px;
+    background-image: url(../images/pexels-photo-1089842拷貝.png);
+    background-size:cover;
+    background-position: center center;
+}
+.main-why>h1{
+    padding-top: 60px;
+    margin-bottom: 15px;
+    font-size: 28px;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 2;
+}
+.main-why>p{
+    width:44%;
+    margin-left: 27.7%;
+    margin-right: 30%;
+    height:500px;
+    line-height: 1.7;
+    text-indent: 2em;
+    letter-spacing: 1px;
 }
 .more-info{
     width:1400px;
@@ -224,4 +248,3 @@
 .contact-title{
     color:black;
 }
-

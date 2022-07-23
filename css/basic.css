@@ -25,7 +25,10 @@
     padding-right: 25px;
     padding-left:25px;
     display:block;
-
+}
+.header ul>li a:hover{
+    background-color: gray;
+    color:white;
 }
 .home{
     width:1400px;
