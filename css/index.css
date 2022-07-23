@@ -228,7 +228,7 @@
     width:45%;
 }
 .content .intro-text{
-    margin-top:25px;
+    margin-top:15px;
     width:100%;
 }
 .content .intro-text p{
@@ -237,7 +237,7 @@
 .content .intro-text-2 ,.intro-text-3 ,.intro-text-4{
     color:rgb(190, 189, 189);
     line-height: 2;
-    margin-top:25px;
+    margin-top:15px;
     margin-left:20px;
 }
 .content .intro-text-4 a{
