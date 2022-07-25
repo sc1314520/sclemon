@@ -224,4 +224,10 @@
 .contact-title{
     color:black;
 }
+.feedback:hover{
+    box-shadow: 6px 8px 12px orange ;
+}
+.more-info a:hover{
+    color:orange
+}
 
