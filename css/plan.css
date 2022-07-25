@@ -196,6 +196,7 @@
     margin-bottom:30px;
     display: flex;
     align-items: center;
+    transition: all 0.8s;
 }
 .more-info h1{
     padding-top:15px;
