@@ -105,7 +105,9 @@
     width:1400px;
     margin: 0 auto;
     height:230px;
-    background-color: black;
+    background: url(../images/north-star-2869817_1280.webp);
+    background-position: bottom;
+    background-size: cover;
     position: relative;
 }
 .mark1{

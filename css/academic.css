@@ -76,9 +76,15 @@
 .score{
     width:1400px;
     margin: 0 auto;
+    background: url(../images/pexels-photo-4207791.webp);
+    padding-bottom:3px;
 }
 .score-content{
+    padding-top:10px;
     margin-bottom:20px;
+    padding-bottom:20px;
+    background: rgba(255,255,255,0.45);
+    
 }
 .score>h1{
     padding-top:20px;
@@ -125,6 +131,9 @@
 .study-more a{
     text-decoration: none;
     color:black;
+}
+.study-more a:hover{
+    color: orange;
 }
 .study>h1{
     padding-top:20px;
