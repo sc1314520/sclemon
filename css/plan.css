@@ -58,12 +58,16 @@
     width:1400px;
     margin: 0 auto;
     position: relative;
+    background: url(../images/pexels-photo-4466381.webp);
+    background-size:cover;
+    background-position: right;
 
 }
 .date{
     position: absolute;
     top:50px;
     right:45px;
+    color: white;
 }
 .main>h1{
     font-size: 28px;
@@ -71,19 +75,21 @@
     text-align: center;
     line-height: 2;
     margin-top:8px;
+    color: white;
 }
 .main-box{
     width: 100%;
     display: flex;
     justify-content: center;
     margin-top:20px;
-    margin-bottom: 30px;
+   
 }
 .main-box .ic-row{
     display: block;
     text-align: center;
     font-size: 60px;
     margin-top:15px;
+    color: white;
 }
 .fed{
     width: 49%;
@@ -95,6 +101,7 @@
     text-align: center;
     line-height: 2;
     margin-top:7px;
+    color: white;
 }
 .session-box{
     border:1px solid gray;
@@ -105,6 +112,7 @@
     margin-top:10px;
     box-shadow: 2px 2px 4px gray;
     border-radius: 10px;
+    background: rgba(255,255,255,0.75);
 }
 .session-box>h2{
     margin-top:10px;
@@ -129,6 +137,7 @@
     text-align: center;
     line-height: 2;
     margin-top:7px;
+    color: white;
 }
 .split{
     display: flex;
@@ -142,6 +151,7 @@
     font-weight: bold;
     text-align: center;
     line-height: 2;
+    color: white;
 }
 .fc-box{
     border:5px solid red;
