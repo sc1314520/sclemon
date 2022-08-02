@@ -106,7 +106,23 @@
     margin: 0 auto;
     height:230px;
     background-color: black;
+    position: relative;
 }
+.mark1{
+    width:735px;
+    border-top:2px solid red;
+    position: absolute;
+    bottom:23px;
+    left:70px;
+}
+.mark2{
+    width:490px;
+    border-top:2px solid blue;
+    position: absolute;
+    bottom:23px;
+    right:91px;
+}
+
 .skills h1{
     text-align: center;
     font-size: 28px;
@@ -129,6 +145,23 @@
     box-shadow: 2px 1px 4px gray;
     border-radius: 10%;
     position: relative;
+}
+.level,.level2{
+    width:30px;
+    height:20px;
+    font-size:12px;
+    line-height: 20px;
+    text-align: center;
+    position: absolute;
+    top:-0.7px;
+    left:-0.3px;
+    border-radius: 10%;
+    color: white;
+    background-color: red;
+    overflow: hidden;
+}
+.level2{
+    background-color: green;
 }
 .skills li img{
     width:80%;
