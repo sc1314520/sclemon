@@ -50,6 +50,48 @@
     padding-bottom:8px;
     text-align: center;
 }
+.ocp{
+    width:1400px;
+    height:700px;
+    margin: 0 auto;
+    margin-top:5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../images/pexels-neale-lasalle-631477.jpg);
+}
+.ocp-list{
+    background: rgba(255,255,255,0.6);
+    width:520px;
+    height:600px;
+    box-shadow: 10px 10px 2px white;
+    border-radius: 4px;
+}
+.ocp-list h1{
+    font-size: 28px;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 2;
+    margin-top:8px;
+    color:white;
+    border-bottom: 0.4px solid white;
+    margin-left:20px;
+    margin-right:20px;
+}
+.ocp-list>ul li{
+    margin-top:20px;
+    margin-left:60px;
+    font-size: 18px;
+    color: white;
+}
+.check{
+    color:greenyellow;
+    font-size: 18px;
+}
+.run{
+    color:brown;
+    font-size: 18px;
+}
 .taco{
     width:1400px;
     margin: 0 auto;
@@ -74,7 +116,6 @@
     font-weight: bolder;
     text-align: center;
     line-height: 2;
-    margin-top:8px;
     color: white;
 }
 .main-box{
