@@ -52,7 +52,7 @@
 }
 .ocp{
     width:1400px;
-    height:700px;
+    height:720px;
     margin: 0 auto;
     margin-top:5px;
     display: flex;
@@ -62,8 +62,8 @@
 }
 .ocp-list{
     background: rgba(255,255,255,0.6);
-    width:520px;
-    height:600px;
+    width:560px;
+    height:630px;
     box-shadow: 10px 10px 2px white;
     border-radius: 4px;
 }
