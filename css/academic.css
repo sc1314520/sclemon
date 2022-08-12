@@ -114,9 +114,14 @@
 .score-table1 th,td{
     border:0.1px solid gray;
     line-height: 50px;
-    width:90px;
+    width:86px;
 }
-
+.ext{
+    color: red;
+}
+.orc{
+    font-size:13.5px;
+}
 .study{
     width:1400px;
     margin: 0 auto;
