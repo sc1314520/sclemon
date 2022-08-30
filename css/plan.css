@@ -99,6 +99,7 @@
 .main{
     width:1400px;
     margin: 0 auto;
+    margin-top:5px;
     position: relative;
     background: url(../images/pexels-photo-4466381.webp);
     background-size:cover;
