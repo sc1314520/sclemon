@@ -3,6 +3,10 @@ $(document).ready(function () {
         event.preventDefault();
         $('.home-text').toggleClass("animate__lightSpeedInLeft");
       });
+      $('.home').hover(function (event) {
+        event.preventDefault();
+        $('.home-text2').toggleClass("animate__lightSpeedInRight");
+      });
     $('.about').hover(function (event) {
         event.preventDefault();
         $('.about h1').toggleClass("animate__bounceIn");

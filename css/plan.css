@@ -45,7 +45,13 @@
     left:80px;
     
 }
-.home-text h1{
+.home-text2{
+    position: absolute;
+    color:white;
+    bottom:120px;
+    right:80px;   
+}
+.home-text h1,.home-text2 h1{
     font-size: 48px;
     padding-bottom:8px;
     text-align: center;
