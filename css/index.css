@@ -56,7 +56,7 @@
     margin-bottom:20px;
     position: relative;
 }
-.ocp-open,.fans-open{
+.ocp-open,.fans-open,.ntnu-open{
     width:600px;
     border:1px solid white;
     border-radius: 10px;
@@ -96,7 +96,7 @@
    color: pink;
    border: 1px solid pink;
 }
-.ocp-open img{
+.ocp-open img,.ntnu-open img{
     width:90%;
     margin-left:5%;
     margin-right: 5%;
@@ -105,10 +105,10 @@
     margin-left:25px;
     margin-top:20px;
 }
-.ocp-open-2,.fans-open-2{
+.ocp-open-2,.fans-open-2,.ntnu-open-2{
     display: block;
 }
-.close-button,.close-button2{
+.close-button,.close-button2,.close-button3{
     position: absolute;
     right:10px;
     bottom:5px;

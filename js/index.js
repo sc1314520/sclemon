@@ -20,6 +20,7 @@ $(document).ready(function () {
         $('.project>h1').toggleClass("animate__bounceIn");
         $('.content').addClass("animate__fadeIn");
       });
+
       $('.ocpjp-click').click(function (event) {
         event.preventDefault();
         $('.ocp-open').addClass("ocp-open-2");
@@ -28,6 +29,7 @@ $(document).ready(function () {
         event.preventDefault();
         $('.ocp-open').toggleClass("ocp-open-2");
       });
+
       $('.fans-click').click(function (event) {
         event.preventDefault();
         $('.fans-open').addClass("fans-open-2");
@@ -35,6 +37,15 @@ $(document).ready(function () {
       $('.close-button2').click(function (event) {
         event.preventDefault();
         $('.fans-open').toggleClass("fans-open-2");
+      });
+
+      $('.ntnu-click').click(function (event) {
+        event.preventDefault();
+        $('.ntnu-open').addClass("ntnu-open-2");
+      });
+      $('.close-button3').click(function (event) {
+        event.preventDefault();
+        $('.ntnu-open').toggleClass("ntnu-open-2");
       });
 });
 function VS(){
