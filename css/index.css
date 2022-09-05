@@ -1,3 +1,4 @@
+
 .header{
     height:60px;
     width:100%;
@@ -53,7 +54,78 @@
     width:1400px;
     margin: 0 auto;
     margin-bottom:20px;
+    position: relative;
 }
+.ocp-open,.fans-open{
+    width:600px;
+    border:1px solid white;
+    border-radius: 10px;
+    box-shadow: 1.5px 1.5px 2px;
+    background:rgba(255, 255,255 ,1);
+    position: absolute;
+    margin-left:400px;
+    margin-top:-20px;
+    z-index: 1000;
+    display: none;
+}
+.fans-open{
+    margin-top:-5px;
+}
+.fans-hide{
+    position: absolute;
+    border-radius: 10px;
+    width:598px;
+    height:323px;
+    background-image: url(../images/flower.webp);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.fans-hide2{
+    display: none;
+}
+.fans-pw{
+   width:200px;
+   height:30px;
+   color: pink;
+   border: 1px solid pink;
+}
+.ocp-open img{
+    width:90%;
+    margin-left:5%;
+    margin-right: 5%;
+}
+.fans-open iframe{
+    margin-left:25px;
+    margin-top:20px;
+}
+.ocp-open-2,.fans-open-2{
+    display: block;
+}
+.close-button,.close-button2{
+    position: absolute;
+    right:10px;
+    bottom:5px;
+}
+.close-button2{
+    background-color: transparent;
+    color: pink;
+    border: 1px solid pink;
+}
+.verify-button{
+    position: absolute;
+    right:60px;
+    bottom:5px;
+    background-color: transparent;
+    color: pink;
+    border: 1px solid pink;
+}
+.close-button2:hover ,.verify-button:hover{
+    background: pink;
+    color:white;
+}
+
 .about h1{
     text-align: center;
     font-size: 28px;

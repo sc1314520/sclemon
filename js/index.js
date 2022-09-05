@@ -20,5 +20,33 @@ $(document).ready(function () {
         $('.project>h1').toggleClass("animate__bounceIn");
         $('.content').addClass("animate__fadeIn");
       });
+      $('.ocpjp-click').click(function (event) {
+        event.preventDefault();
+        $('.ocp-open').addClass("ocp-open-2");
+      });
+      $('.close-button').click(function (event) {
+        event.preventDefault();
+        $('.ocp-open').toggleClass("ocp-open-2");
+      });
+      $('.fans-click').click(function (event) {
+        event.preventDefault();
+        $('.fans-open').addClass("fans-open-2");
+      });
+      $('.close-button2').click(function (event) {
+        event.preventDefault();
+        $('.fans-open').toggleClass("fans-open-2");
+      });
 });
+function VS(){
+  let pw=document.getElementById("fans-hide");
+  let password = document.getElementById("password").value;
+  console.log(password);
+
+  if(password=="1314520"){
+    pw.style.display="none";
+  }
+  else{
+    alert("驗證碼錯誤");
+  }
+}
 
