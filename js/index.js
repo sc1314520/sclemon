@@ -41,9 +41,11 @@ function VS(){
   let pw=document.getElementById("fans-hide");
   let password = document.getElementById("password").value;
   let t=new Date(1988888820).getFullYear();
-  let salt = (document.getElementById("salt").value+17828)*t;
+  let c=("SC1314520,Ting1314520,5205201314520,NC IS SO CUTE").split(",")[3].length;
+  let salt = (document.getElementById("salt").value+c)*t;
   let verify=password*salt;
-  if(verify=="340320185627243200"){
+  console.log(verify);
+  if(verify=="340307683017200"){
     pw.style.display="none";
   }
   else{
