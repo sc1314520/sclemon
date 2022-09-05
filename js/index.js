@@ -55,7 +55,6 @@ function VS(){
   let c=("SC1314520,Ting1314520,5205201314520,NC IS SO CUTE").split(",")[3].length;
   let salt = (document.getElementById("salt").value+c)*t;
   let verify=password*salt;
-  console.log(verify);
   if(verify=="340307683017200"){
     pw.style.display="none";
   }
