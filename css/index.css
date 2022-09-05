@@ -76,11 +76,16 @@
     border-radius: 10px;
     width:598px;
     height:323px;
-    background-image: url(../images/flower.webp);
+    background-image: url(../images/flower-2.jpg);
     background-size: cover;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center
+    justify-content: center;
+}
+.fans-hide>h1{
+    color:white;
+    text-shadow: 2px 2px 1px pink;
 }
 .fans-hide2{
     display: none;

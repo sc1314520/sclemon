@@ -40,9 +40,10 @@ $(document).ready(function () {
 function VS(){
   let pw=document.getElementById("fans-hide");
   let password = document.getElementById("password").value;
-  console.log(password);
-
-  if(password=="1314520"){
+  let salt = (document.getElementById("salt").value+17828)*5;
+  let verify=password*salt;
+  console.log(verify);
+  if(verify=="863756816312800"){
     pw.style.display="none";
   }
   else{

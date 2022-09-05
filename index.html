@@ -44,7 +44,9 @@
         </div>
         <div class="fans-open">
             <div class="fans-hide" id="fans-hide">
-                <input type="password" class="fans-pw" id="password" name="password" placeholder="請輸入密碼">
+                <h1>身份驗證機制</h1>
+                <input id="salt" type="hidden" value="1314">
+                <input type="password" class="fans-pw" id="password" name="password" placeholder="請輸入驗證碼">
                 <button class="verify-button" onclick="VS();" placeholder="請輸入驗證碼">verify</button>
             </div>
             <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FAnimeJSAS%2F&tabs=timeline&width=800&height=300&small_header=true&adapt_container_width=false&hide_cover=false&show_facepile=true&appId" width="800" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
