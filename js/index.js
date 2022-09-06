@@ -96,7 +96,7 @@ function EDU(){
   let usset=document.getElementById("us-second");
   let account=document.getElementById("user").value;
   let password=document.getElementById("user-pw").value;
-  if(account=="SCLemon" || account=="LKY0324" || account=="b1121016"|| account=="CRAJ" || account=="joanna"||account=="Yusyuan6"||account=="ryan2718"){
+  if(account=="SCLemon" || account=="LKY0324" || account=="b1121016"|| account=="CRAJ" || account=="joanna"||account=="Yusyuan6"||account=="Thomas0327"){
     if(account=="SCLemon"){
       if(password=="Ting1314520"){
         alert("登入成功！");
@@ -165,8 +165,8 @@ function EDU(){
         alert("帳號或密碼錯誤！");
       }
     }
-    else if(account=="ryan2718"){
-      if(password=="abcd2341829"){
+    else if(account=="Thomas0327"){
+      if(password=="aa920327"){
         alert("登入成功！");
         all.style.display="none";
         btn.style.display="none";
@@ -247,9 +247,9 @@ function forgot(){
 
     }
      //完成
-     else if(account=="ryan2718"){
-      if(password=="rainlin8950@gmail.com"){
-        alert("您的密碼：abcd2341829");
+     else if(account=="Thomas0327"){
+      if(password=="aa630925@yahoo.com.tw"){
+        alert("您的密碼：aa920327");
       }
       else{
         alert("帳號不存在或電子信箱錯誤！");
