@@ -165,6 +165,50 @@
     top:35px;
     right:30px;
 }
+.forgot-btn{
+    text-align: center;
+    text-decoration: none;
+    color:white;
+    display: block;
+}
+.forgot-btn:hover{
+    color: red;
+    cursor: pointer;
+}
+.forgot-all{
+    width:400px;
+    height:300px;
+    border-radius: 10px;
+    position: absolute;
+    background: #000;
+    z-index: 1001;
+    margin-left:100px;
+    margin-top:200px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.forgot-all-2{
+    display: flex;
+}
+.forgot h1{
+    color: white;
+}
+.forgot input{
+    width:200px;
+    height:30px;
+    margin-bottom: 5px;
+}
+.forgot-1{
+    margin-top: 10px;
+    width:200px;
+}
+.forgot-2{
+    width:200px;
+    position: absolute;
+    bottom: 35px;
+    right:100px;
+}
 .close-button2:hover ,.verify-button:hover{
     background: pink;
     color:white;

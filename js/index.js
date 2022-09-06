@@ -61,7 +61,19 @@ $(document).ready(function () {
         event.preventDefault();
         $('.edu-open').toggleClass("edu-open-2");
       });
+
+      //忘記密碼
+      $('.forgot-btn').click(function (event) {
+        event.preventDefault();
+        $('.forgot-all').addClass("forgot-all-2");
+      });
+      $('.forgot-2').click(function (event) {
+        event.preventDefault();
+        $('.forgot-all').toggleClass("forgot-all-2");
+      });
+
 });
+// 粉專驗證
 function VS(){
   let pw=document.getElementById("fans-hide");
   let password = document.getElementById("password").value;
@@ -76,13 +88,15 @@ function VS(){
     alert("驗證碼錯誤");
   }
 }
+
+// 師培生資源驗證
 function EDU(){
   let all=document.getElementById("edu-hide");
   let btn=document.getElementById("edu-v");
   let usset=document.getElementById("us-second");
   let account=document.getElementById("user").value;
   let password=document.getElementById("user-pw").value;
-  if(account=="SCLemon" || account=="LKY0324" || account=="SCLemon"|| account=="SCLemon"){
+  if(account=="SCLemon" || account=="LKY0324" || account=="b1121016"|| account=="CRAJ"){
     if(account=="SCLemon"){
       if(password=="Ting1314520"){
         alert("登入成功！");
@@ -105,11 +119,29 @@ function EDU(){
         alert("帳號或密碼錯誤！");
       }
     }
-    else if(account=="SCLemon"){
 
+    else if(account=="b1121016"){
+      if(password=="930206Aaa"){
+        alert("登入成功！");
+        all.style.display="none";
+        btn.style.display="none";
+        usset.innerHTML='<span>'+account+'</span>';
+      }
+      else{
+        alert("帳號或密碼錯誤！");
+      }
     }
-    else if(account=="SCLemon"){
 
+    else if(account=="CRAJ"){
+      if(password=="craj2006"){
+        alert("登入成功！");
+        all.style.display="none";
+        btn.style.display="none";
+        usset.innerHTML='<span>'+account+'</span>';
+      }
+      else{
+        alert("帳號或密碼錯誤！");
+      }
     }
   }
   else{
@@ -117,3 +149,31 @@ function EDU(){
   }
 }
 
+
+// 忘記密碼
+function forgot(){
+  let all=document.getElementById("forgot-all");
+  let account =document.getElementById("forgot-account").value;
+  let password=document.getElementById("forgot-pass").value;
+  if(password=="1314520"){
+    if(account=="SCLemon"){
+      alert("您的密碼：Ting1314520");
+    }
+    else if(account=="LKY0324"){
+      alert("您的密碼：Ky20050324");
+    }
+    else if(account=="b1121016"){
+      alert("您的密碼：930206Aaa");
+    }
+    else if(account=="CRAJ"){
+      alert("您的密碼：craj2006");
+      
+    }
+    else{
+      alert("帳號不存在或授權碼錯誤！");
+    }
+  }
+  else{
+    alert("帳號不存在或授權碼錯誤！");
+  }
+}

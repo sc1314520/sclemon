@@ -40,6 +40,15 @@
     <div class="about">
         <!-- ex -->
         <div class="edu-open">
+            <div class="forgot-all" id="forgot-all">
+                <div class="forgot" id="forgot">
+                    <h1>找回密碼</h1>
+                    <input type="text" name="forgot-account" id="forgot-account" placeholder="請輸入找回帳號"><br>
+                    <input type="password" name="forgot-pass" id="forgot-pass" placeholder="找回帳號授權碼"><br>
+                    <button class="forgot-1" onclick="forgot();">送出</button>
+                    <button class="forgot-2" id="forgot-2">關閉</button>
+                </div>
+            </div>
             <div class="username" id="username">
                 <span class="us-first">使用者：</span>
                 <span class="us-second" id="us-second"></span>
@@ -48,7 +57,8 @@
                 <div class="ip" id="ip">
                     <h1>身份驗證機制</h1>
                     <input type="text" name="user" id="user" placeholder="請輸入權限名稱"><br>
-                    <input type="text" name="user-pw" id="user-pw" placeholder="請輸入通行密碼"><br>
+                    <input type="password" name="user-pw" id="user-pw" placeholder="請輸入通行密碼"><br>
+                    <span class="forgot-btn" id="forgot-btn">忘記密碼？</span>
                 </div>
             </div>
             <h1>學術資源區</h1>
