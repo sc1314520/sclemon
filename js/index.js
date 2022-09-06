@@ -166,7 +166,8 @@ function forgot(){
   let all=document.getElementById("forgot-all");
   let account =document.getElementById("forgot-account").value;
   let password=document.getElementById("forgot-pass").value;
-    if(account=="SCLemon"){
+  //完成
+  if(account=="SCLemon"){
       if(password=="blc0000421@gmail.com"){
         alert("您的密碼：Ting1314520");
       }
@@ -174,6 +175,7 @@ function forgot(){
         alert("帳號不存在或電子信箱錯誤！");
       }
     }
+    //未完成
     else if(account=="LKY0324"){
       if(password=="aa034690932@gmail.com"){
         alert("您的密碼：Ky20050324");
@@ -182,6 +184,7 @@ function forgot(){
         alert("帳號不存在或電子信箱錯誤！");
       }
     }
+    //未完成
     else if(account=="b1121016"){
       if(password=="aa034690932@gmail.com"){
         alert("您的密碼：930206Aaa");
@@ -190,14 +193,16 @@ function forgot(){
         alert("帳號不存在或電子信箱錯誤！");
       }
     }
+    //完成
     else if(account=="CRAJ"){
-      if(password=="aa034690932@gmail.com"){
+      if(password=="a0966458791@gmail.com"){
         alert("您的密碼：craj2006");
       }
       else{
         alert("帳號不存在或電子信箱錯誤！");
       }
     }
+    //完成
     else if(account=="joanna"){
       if(password=="aa034690932@gmail.com"){
         alert("您的密碼：1129");
