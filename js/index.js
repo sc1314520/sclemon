@@ -197,7 +197,7 @@ function forgot(){
     }
     //未完成
     else if(account=="b1121016"){
-      if(password=="aa034690932@gmail.com"){
+      if(password=="990061@ms2.ccsh.tn.edu.tw"){
         alert("您的密碼：930206Aaa");
       }
       else{
