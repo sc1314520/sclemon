@@ -166,29 +166,50 @@ function forgot(){
   let all=document.getElementById("forgot-all");
   let account =document.getElementById("forgot-account").value;
   let password=document.getElementById("forgot-pass").value;
-  if(password=="1314520"){
     if(account=="SCLemon"){
-      alert("您的密碼：Ting1314520");
+      if(password=="blc0000421@gmail.com"){
+        alert("您的密碼：Ting1314520");
+      }
+      else{
+        alert("帳號不存在或電子信箱錯誤！");
+      }
     }
     else if(account=="LKY0324"){
-      alert("您的密碼：Ky20050324");
+      if(password=="aa034690932@gmail.com"){
+        alert("您的密碼：Ky20050324");
+      }
+      else{
+        alert("帳號不存在或電子信箱錯誤！");
+      }
     }
     else if(account=="b1121016"){
-      alert("您的密碼：930206Aaa");
+      if(password=="aa034690932@gmail.com"){
+        alert("您的密碼：930206Aaa");
+      }
+      else{
+        alert("帳號不存在或電子信箱錯誤！");
+      }
     }
     else if(account=="CRAJ"){
-      alert("您的密碼：craj2006");
-
+      if(password=="aa034690932@gmail.com"){
+        alert("您的密碼：craj2006");
+      }
+      else{
+        alert("帳號不存在或電子信箱錯誤！");
+      }
     }
     else if(account=="joanna"){
-      alert("您的密碼：1129");
+      if(password=="aa034690932@gmail.com"){
+        alert("您的密碼：1129");
+      }
+      else{
+        alert("帳號不存在或電子信箱錯誤！");
+      }
+      
 
     }
     else{
-      alert("帳號不存在或授權碼錯誤！");
+      alert("帳號不存在或電子信箱錯誤！");
     }
-  }
-  else{
-    alert("帳號不存在或授權碼錯誤！");
-  }
+  
 }
