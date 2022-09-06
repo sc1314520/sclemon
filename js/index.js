@@ -96,7 +96,7 @@ function EDU(){
   let usset=document.getElementById("us-second");
   let account=document.getElementById("user").value;
   let password=document.getElementById("user-pw").value;
-  if(account=="SCLemon" || account=="LKY0324" || account=="b1121016"|| account=="CRAJ"){
+  if(account=="SCLemon" || account=="LKY0324" || account=="b1121016"|| account=="CRAJ" || account=="joanna"){
     if(account=="SCLemon"){
       if(password=="Ting1314520"){
         alert("登入成功！");
@@ -143,6 +143,17 @@ function EDU(){
         alert("帳號或密碼錯誤！");
       }
     }
+    else if(account=="joanna"){
+      if(password=="1129"){
+        alert("登入成功！");
+        all.style.display="none";
+        btn.style.display="none";
+        usset.innerHTML='<span>'+account+'</span>';
+      }
+      else{
+        alert("帳號或密碼錯誤！");
+      }
+    }
   }
   else{
     alert("帳號或密碼錯誤！");
@@ -167,7 +178,11 @@ function forgot(){
     }
     else if(account=="CRAJ"){
       alert("您的密碼：craj2006");
-      
+
+    }
+    else if(account=="joanna"){
+      alert("您的密碼：1129");
+
     }
     else{
       alert("帳號不存在或授權碼錯誤！");
