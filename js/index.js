@@ -30,6 +30,8 @@ $(document).ready(function () {
         $('.ocp-open').toggleClass("ocp-open-2");
       });
 
+
+
       $('.fans-click').click(function (event) {
         event.preventDefault();
         $('.fans-open').addClass("fans-open-2");
@@ -39,6 +41,8 @@ $(document).ready(function () {
         $('.fans-open').toggleClass("fans-open-2");
       });
 
+
+      
       $('.ntnu-click').click(function (event) {
         event.preventDefault();
         $('.ntnu-open').addClass("ntnu-open-2");
