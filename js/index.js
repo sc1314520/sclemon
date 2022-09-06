@@ -51,6 +51,16 @@ $(document).ready(function () {
         event.preventDefault();
         $('.ntnu-open').toggleClass("ntnu-open-2");
       });
+
+
+      $('.edu-click').click(function (event) {
+        event.preventDefault();
+        $('.edu-open').addClass("edu-open-2");
+      });
+      $('.close-button4').click(function (event) {
+        event.preventDefault();
+        $('.edu-open').toggleClass("edu-open-2");
+      });
 });
 function VS(){
   let pw=document.getElementById("fans-hide");
@@ -64,6 +74,46 @@ function VS(){
   }
   else{
     alert("驗證碼錯誤");
+  }
+}
+function EDU(){
+  let all=document.getElementById("edu-hide");
+  let btn=document.getElementById("edu-v");
+  let usset=document.getElementById("us-second");
+  let account=document.getElementById("user").value;
+  let password=document.getElementById("user-pw").value;
+  if(account=="SCLemon" || account=="LKY0324" || account=="SCLemon"|| account=="SCLemon"){
+    if(account=="SCLemon"){
+      if(password=="Ting1314520"){
+        alert("登入成功！");
+        all.style.display="none";
+        btn.style.display="none";
+        usset.innerHTML='<span>'+account+'</span>';
+      }
+      else{
+        alert("帳號或密碼錯誤！");
+      }
+    }
+    else if(account=="LKY0324"){
+      if(password=="Ky20050324"){
+        alert("登入成功！");
+        all.style.display="none";
+        btn.style.display="none";
+        usset.innerHTML='<span>'+account+'</span>';
+      }
+      else{
+        alert("帳號或密碼錯誤！");
+      }
+    }
+    else if(account=="SCLemon"){
+
+    }
+    else if(account=="SCLemon"){
+
+    }
+  }
+  else{
+    alert("帳號或密碼錯誤！");
   }
 }
 
