@@ -68,6 +68,58 @@
     z-index: 1000;
     display: none;
 }
+.ocp-open-text-all{
+    margin-left:50px;
+    margin-right: 50px;
+    width:500px;
+    margin-bottom: 40px;
+}
+.ocp-open-text-all>h2,.ocp-open>h2{
+    text-align: center;
+    line-height: 2;
+    font-size: 24px;
+    border-bottom: 1px solid gray;
+}
+.ocp-open>h2{
+    margin-left:40px;
+    margin-right:40px;
+    margin-bottom: 10px;
+}
+.ocp-open-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left:10px;
+    padding-right: 10px;
+    margin-top:20px;
+}
+.ocp-text-block{
+    width:100%;
+}
+.ocp-text-block h2{
+    font-size: 18px;
+    padding-right:20px;
+    border-bottom: 1px solid gray;
+    display: inline;
+}
+.ocp-text-block h4{
+    margin: 20px;
+    line-height: 1.5;
+    text-align: justify;
+}
+.ex{
+    margin:20px;
+    line-height: 1.5;
+}
+.ex a{
+    padding:3px;
+    text-decoration: none;
+    color: gray;
+}
+.ex a:hover{
+    color: white;
+    background: #000;
+}
 .edu-open>h1{
     margin-left:10px;
     margin-right:10px;
