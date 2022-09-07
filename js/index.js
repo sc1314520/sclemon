@@ -96,7 +96,7 @@ function EDU(){
   let usset=document.getElementById("us-second");
   let account=document.getElementById("user").value;
   let password=document.getElementById("user-pw").value;
-  if(account=="SCLemon" || account=="LKY0324" || account=="b1121016"|| account=="CRAJ" || account=="joanna"||account=="Yusyuan6"||account=="Thomas0327"||account=="ariel3720"||account=="hAnKYcH18"||account=="shaoan9"||account=="dora920911"||account=="chanel119029"||account=="HKL101530"){
+  if(account=="SCLemon" || account=="LKY0324" || account=="b1121016"|| account=="CRAJ" || account=="joanna"||account=="Yusyuan6"||account=="Thomas0327"||account=="ariel3720"||account=="hAnKYcH18"||account=="shaoan9"||account=="dora920911"||account=="chanel119029"||account=="HKL101530"||account=="yeyuki0610"){
     if(account=="SCLemon"){
       if(password=="Ting1314520"){
         alert("登入成功！");
@@ -233,6 +233,17 @@ function EDU(){
     }
     else if(account=="HKL101530"){
       if(password=="1001300621921"){
+        alert("登入成功！");
+        all.style.display="none";
+        btn.style.display="none";
+        usset.innerHTML='<span>'+account+'</span>';
+      }
+      else{
+        alert("帳號或密碼錯誤！");
+      }
+    }
+    else if(account=="yeyuki0610"){
+      if(password=="207610yu"){
         alert("登入成功！");
         all.style.display="none";
         btn.style.display="none";
@@ -383,6 +394,17 @@ function forgot(){
      else if(account=="HKL101530"){
       if(password=="lilian100130@gmail.com"){
         alert("您的密碼：1001300621921");
+      }
+      else{
+        alert("帳號不存在或電子信箱錯誤！");
+      }
+      
+
+    }
+     //完成
+     else if(account=="yeyuki0610"){
+      if(password=="t0967360610@gmail.com"){
+        alert("您的密碼：207610yu");
       }
       else{
         alert("帳號不存在或電子信箱錯誤！");
