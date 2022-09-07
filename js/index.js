@@ -96,7 +96,7 @@ function EDU(){
   let usset=document.getElementById("us-second");
   let account=document.getElementById("user").value;
   let password=document.getElementById("user-pw").value;
-  if(account=="SCLemon" || account=="LKY0324" || account=="b1121016"|| account=="CRAJ" || account=="joanna"||account=="Yusyuan6"||account=="Thomas0327"||account=="ariel3720"||account=="hAnKYcH18"){
+  if(account=="SCLemon" || account=="LKY0324" || account=="b1121016"|| account=="CRAJ" || account=="joanna"||account=="Yusyuan6"||account=="Thomas0327"||account=="ariel3720"||account=="hAnKYcH18"||account=="shaoan9"){
     if(account=="SCLemon"){
       if(password=="Ting1314520"){
         alert("登入成功！");
@@ -189,6 +189,17 @@ function EDU(){
     }
     else if(account=="hAnKYcH18"){
       if(password=="hAnK08141214"){
+        alert("登入成功！");
+        all.style.display="none";
+        btn.style.display="none";
+        usset.innerHTML='<span>'+account+'</span>';
+      }
+      else{
+        alert("帳號或密碼錯誤！");
+      }
+    }
+    else if(account=="shaoan9"){
+      if(password=="andy9328"){
         alert("登入成功！");
         all.style.display="none";
         btn.style.display="none";
@@ -294,6 +305,17 @@ function forgot(){
      else if(account=="hAnKYcH18"){
       if(password=="hank20111010@gmail.com"){
         alert("您的密碼：hAnK08141214");
+      }
+      else{
+        alert("帳號不存在或電子信箱錯誤！");
+      }
+      
+
+    }
+     //完成
+     else if(account=="shaoan9"){
+      if(password=="63101884a@gmail.com"){
+        alert("您的密碼：andy9328");
       }
       else{
         alert("帳號不存在或電子信箱錯誤！");
