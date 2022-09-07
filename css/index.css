@@ -194,6 +194,13 @@
     position: absolute;
     right:10px;
     bottom:5px;
+    border:1px solid brown;
+    background-color: transparent;
+    color: brown;
+}
+.close-button:hover,.close-button2:hover,.close-button3:hover,.close-button4:hover{
+    background-color: brown;
+    color: white;
 }
 .close-button2{
     background-color: transparent;
@@ -216,6 +223,13 @@
     right:60px;
     bottom:5px;
     z-index: 1000;
+    border:1px solid brown;
+    background-color: transparent;
+    color: brown;
+}
+.verify-button2:hover{
+    background-color: brown;
+    color: white;
 }
 .username{
     position: absolute;
@@ -229,7 +243,7 @@
     display: block;
 }
 .forgot-btn:hover{
-    color: red;
+    color: brown;
     cursor: pointer;
 }
 .forgot-all{
