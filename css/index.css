@@ -6,8 +6,7 @@
     display:flex;
     justify-content: space-between;
     align-items: center;
-    background-color: aliceblue;
-    opacity: 60%;
+    background:rgba(240, 248, 255, 0.6);
     position: fixed;
     z-index:1000;
 }
@@ -20,7 +19,7 @@
 }
 .header ul>li a{
     text-decoration: none;
-    color:black;
+    color:gray;
     line-height: 60px;
     text-align: center;
     padding-right: 25px;
