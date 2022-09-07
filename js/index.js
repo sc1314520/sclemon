@@ -96,7 +96,7 @@ function EDU(){
   let usset=document.getElementById("us-second");
   let account=document.getElementById("user").value;
   let password=document.getElementById("user-pw").value;
-  if(account=="SCLemon" || account=="LKY0324" || account=="b1121016"|| account=="CRAJ" || account=="joanna"||account=="Yusyuan6"||account=="Thomas0327"||account=="ariel3720"||account=="hAnKYcH18"||account=="shaoan9"||account=="dora920911"||account=="chanel119029"||account=="HKL101530"||account=="yeyuki0610"||account=="shung0020"||account=="yht1025"||account=="d33659833"||account=="antonytu717"){
+  if(account=="SCLemon" || account=="LKY0324" || account=="b1121016"|| account=="CRAJ" || account=="joanna"||account=="Yusyuan6"||account=="Thomas0327"||account=="ariel3720"||account=="hAnKYcH18"||account=="shaoan9"||account=="dora920911"||account=="chanel119029"||account=="HKL101530"||account=="yeyuki0610"||account=="shung0020"||account=="yht1025"||account=="d33659833"||account=="antonytu717"||account=="starjoylight0209"){
     if(account=="SCLemon"){
       if(password=="Ting1314520"){
         alert("登入成功！");
@@ -288,6 +288,17 @@ function EDU(){
     }
     else if(account=="antonytu717"){
       if(password=="antonytu717"){
+        alert("登入成功！");
+        all.style.display="none";
+        btn.style.display="none";
+        usset.innerHTML='<span>'+account+'</span>';
+      }
+      else{
+        alert("帳號或密碼錯誤！");
+      }
+    }
+    else if(account=="starjoylight0209"){
+      if(password=="star0209"){
         alert("登入成功！");
         all.style.display="none";
         btn.style.display="none";
@@ -493,6 +504,17 @@ function forgot(){
     else if(account=="antonytu717"){
       if(password=="antonytu717@gmail.com"){
         alert("您的密碼：antonytu717");
+      }
+      else{
+        alert("帳號不存在或電子信箱錯誤！");
+      }
+      
+  
+  }
+  //完成
+    else if(account=="starjoylight0209"){
+      if(password=="starjoylight@gmail.com"){
+        alert("您的密碼：starjoy0209");
       }
       else{
         alert("帳號不存在或電子信箱錯誤！");
