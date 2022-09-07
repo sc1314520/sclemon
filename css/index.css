@@ -145,6 +145,12 @@
     width:300px;
     height:30px;
 }
+.declare{
+    font-size: 10px;
+    position: absolute;
+    bottom: 5px;
+    left:5px;
+}
 .fans-open{
     margin-top:-5px;
 }
