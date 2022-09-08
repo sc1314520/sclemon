@@ -96,7 +96,7 @@ function EDU(){
   let usset=document.getElementById("us-second");
   let account=document.getElementById("user").value;
   let password=document.getElementById("user-pw").value;
-  if(account=="SCLemon" || account=="LKY0324" || account=="b1121016"|| account=="CRAJ" || account=="joanna"||account=="Yusyuan6"||account=="Thomas0327"||account=="ariel3720"||account=="hAnKYcH18"||account=="shaoan9"||account=="dora920911"||account=="chanel119029"||account=="HKL101530"||account=="yeyuki0610"||account=="shung0020"||account=="yht1025"||account=="d33659833"||account=="antonytu717"||account=="starjoylight0209"||account=="Mi.T413"||account=="zihui0516"||account=="910501"){
+  if(account=="SCLemon" || account=="LKY0324" || account=="b1121016"|| account=="CRAJ" || account=="joanna"||account=="Yusyuan6"||account=="Thomas0327"||account=="ariel3720"||account=="hAnKYcH18"||account=="shaoan9"||account=="dora920911"||account=="chanel119029"||account=="HKL101530"||account=="yeyuki0610"||account=="shung0020"||account=="yht1025"||account=="d33659833"||account=="antonytu717"||account=="starjoylight0209"||account=="Mi.T413"||account=="zihui0516"||account=="910501"||account=="amy@@"){
     if(account=="SCLemon"){
       if(password=="Ting1314520"){
         alert("登入成功！");
@@ -332,6 +332,17 @@ function EDU(){
     }
     else if(account=="910501"){
       if(password=="emily910501"){
+        alert("登入成功！");
+        all.style.display="none";
+        btn.style.display="none";
+        usset.innerHTML='<span>'+account+'</span>';
+      }
+      else{
+        alert("帳號或密碼錯誤！");
+      }
+    }
+    else if(account=="amy@@"){
+      if(password=="0608"){
         alert("登入成功！");
         all.style.display="none";
         btn.style.display="none";
@@ -581,6 +592,17 @@ function forgot(){
   else if(account=="910501"){
     if(password=="e087231353@gmail.com"){
       alert("您的密碼：emily910501");
+    }
+    else{
+      alert("帳號不存在或電子信箱錯誤！");
+    }
+    
+
+  }
+  //完成
+  else if(account=="amy@@"){
+    if(password=="chensupinchen@gmail.com"){
+      alert("您的密碼：0608");
     }
     else{
       alert("帳號不存在或電子信箱錯誤！");
