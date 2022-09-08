@@ -71,6 +71,16 @@ $(document).ready(function () {
         event.preventDefault();
         $('.forgot-all').toggleClass("forgot-all-2");
       });
+      
+      //技巧
+      $('.skills-text-mark').click(function (event) {
+        event.preventDefault();
+        $('.skills-text-mark-block').addClass("skills-text-mark-block-2");
+      });
+      $('.skills-btn-1').click(function (event) {
+        event.preventDefault();
+        $('.skills-text-mark-block').toggleClass("skills-text-mark-block-2");
+      });
 
 });
 // 粉專驗證

@@ -386,6 +386,58 @@
     background-size: cover;
     position: relative;
 }
+.skills-text-mark{
+    position: absolute;
+    top: 32px;
+    right:57px;
+    color: white;
+    padding:8px;
+    background-color: transparent;
+    border: transparent;
+    z-index: 1001;
+}
+.skills-text-mark:hover{
+    cursor: pointer;
+    background-color: red;
+}
+.skills-text-mark-block{
+    position: absolute;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px gray;
+    width:800px;
+    height:400px;
+    border:1px solid white;
+    top:-85px;
+    left: 300px;
+    background: white;
+    z-index:1000;
+    display: none;
+}
+.skills-text-mark-block-2{
+    display: block;
+}
+.skills-text-mark-block-img{
+    width:740px;
+    height:300px;
+    margin-left: 30px;
+    margin-top: 50px;
+}
+.skills-text-mark-block-img img{
+    width:100%;
+}
+.skills-btn-1{
+    position: absolute;
+    bottom: 10px;
+    right:10px;
+    border:1px solid brown;
+    color: brown;
+    background-color: transparent;
+}
+.skills-btn-1:hover{
+    cursor: pointer;
+    background: brown;
+    color: white;
+}
 .mark1{
     width:735px;
     border-top:2px solid red;
