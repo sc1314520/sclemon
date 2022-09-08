@@ -81,7 +81,52 @@ $(document).ready(function () {
         event.preventDefault();
         $('.skills-text-mark-block').toggleClass("skills-text-mark-block-2");
       });
-
+      //查詢
+      $('.search-ico-1').click(function (event) {
+      let search=document.getElementById("search-select").value;
+      if(search=="all"){
+        $('#1').show().siblings().show();
+        $('#1').css("display","flex").siblings().css("display","flex");
+      }
+      else if(search==1){
+        $('#1').show().siblings().hide();
+        $('#1').css("display","flex");
+      }
+      else if(search==2){
+        $('#2').show().siblings().hide();
+        $('#2').css("display","flex");
+      }
+      else if(search==3){
+        $('#3').show().siblings().hide();
+        $('#3').css("display","flex");
+      }
+      else if(search==4){
+        $('#4').show().siblings().hide();
+        $('#4').css("display","flex");
+      }
+      else if(search==5){
+        $('#5').show().siblings().hide();
+        $('#5').css("display","flex");
+      }
+      else if(search==6){
+        $('#6').show().siblings().hide();
+        $('#6').css("display","flex");
+      }
+      else if(search==7){
+        $('#7').show().siblings().hide();
+        $('#7').css("display","flex");
+      }
+      else if(search==8){
+        $('#8').show().siblings().hide();
+        $('#8').css("display","flex");
+      }
+      else if(search==9){
+        $('#9').show().siblings().hide();
+        $('#9').css("display","flex");
+      }
+        $('.page').hide();
+        $('.page-c').hide();
+      });
       //換頁
       let i=1;
       $('.down').click(function (event) {

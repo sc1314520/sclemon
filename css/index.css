@@ -528,6 +528,7 @@
 .project{
     width:1400px;
     margin: 0 auto;
+    position: relative;
 }
 .project h1{
     text-align: center;
@@ -548,6 +549,7 @@
 .project p a:hover{
     text-decoration: underline;
 }
+
 .page{
     width:200px;
     margin: 0 auto;
@@ -582,6 +584,39 @@
     display: flex;
     justify-content:space-evenly;
     animation-duration: 2.3s;
+}
+.search{
+    width:250px;
+    height:28px;
+    position: absolute;
+    border: 1px solid brown;
+    top:55px;
+    right:120px;
+    z-index: 1001;
+    display: flex;
+}
+.search-select{
+    height: 26px;
+    z-index: 1002;
+    border-radius: 0;
+    border: 2px solid brown;
+}
+.search-ico-1{
+    height: 26px;
+    width: 64px;
+    background: brown;
+
+}
+.search-icon-2{
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding-top: 5.5px;
+}
+.search-icon-2:hover{
+    cursor: pointer;
 }
 .page-show{
     display: block;
