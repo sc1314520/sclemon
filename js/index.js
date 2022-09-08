@@ -82,6 +82,57 @@ $(document).ready(function () {
         $('.skills-text-mark-block').toggleClass("skills-text-mark-block-2");
       });
 
+      //換頁
+      let i=1;
+      $('.down').click(function (event) {
+        event.preventDefault();
+        if(i<3){
+          i++;
+          if(i==2){
+            $('#4').toggleClass("page-close");
+            $('#5').toggleClass("page-close");
+            $('#6').toggleClass("page-close");
+            $('#7').toggleClass("page-close");
+            $('#8').toggleClass("page-close");
+            $('#9').toggleClass("page-close");
+          }
+          else if(i==3){
+            $('#1').toggleClass("page-close");
+            $('#2').toggleClass("page-close");
+            $('#3').toggleClass("page-close");
+            $('#4').toggleClass("page-close");
+            $('#5').toggleClass("page-close");
+            $('#6').toggleClass("page-close");
+          }
+        }
+        let x =document.getElementById("page-c");
+        x.innerHTML="(目前頁數為："+i+")";
+      });
+      $('.up').click(function (event) {
+        event.preventDefault();
+        if(i>1){
+          i--;
+          if(i==2){
+            $('#1').toggleClass("page-close");
+            $('#2').toggleClass("page-close");
+            $('#3').toggleClass("page-close");
+            $('#4').toggleClass("page-close");
+            $('#5').toggleClass("page-close");
+            $('#6').toggleClass("page-close");
+          }
+          else if(i==1){
+            $('#4').toggleClass("page-close");
+            $('#5').toggleClass("page-close");
+            $('#6').toggleClass("page-close");
+            $('#7').toggleClass("page-close");
+            $('#8').toggleClass("page-close");
+            $('#9').toggleClass("page-close");
+          }
+        }
+        let x =document.getElementById("page-c");
+        x.innerHTML="(目前頁數為："+i+")";
+      });
+
 });
 // 粉專驗證
 function VS(){
@@ -98,7 +149,6 @@ function VS(){
     alert("驗證碼錯誤");
   }
 }
-
 // 師培生資源驗證
 function EDU(){
   let all=document.getElementById("edu-hide");

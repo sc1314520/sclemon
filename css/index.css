@@ -548,6 +548,32 @@
 .project p a:hover{
     text-decoration: underline;
 }
+.page{
+    width:200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}
+.up,.down{
+    width:90px;
+    border: 1px solid brown;
+    background-color: transparent;
+    color: brown;
+    line-height: 1.6;
+}
+.up:hover,.down:hover{
+    background: brown;
+    color: white;
+    cursor: pointer;
+}
+.page-c{
+   display: block;
+   width:150px;
+   margin-bottom: 20px;
+   margin-left: 645px;
+   color: brown;
+}
 .content{
     width:1400px;
     margin: 0 auto;
@@ -556,6 +582,12 @@
     display: flex;
     justify-content:space-evenly;
     animation-duration: 2.3s;
+}
+.page-show{
+    display: block;
+}
+.page-close{
+    display: none;
 }
 .content .href{
     width:35%;
