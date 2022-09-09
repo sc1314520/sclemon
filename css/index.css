@@ -592,7 +592,7 @@
     border: 1px solid brown;
     top:55px;
     right:120px;
-    z-index: 1001;
+    z-index: 999;
     display: flex;
 }
 .search-select{
