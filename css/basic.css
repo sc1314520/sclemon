@@ -69,7 +69,7 @@
 .main{
     width:1400px;
     margin: 0 auto;
-    margin-top:3px;
+    margin-top: -1.5px;
     background-image: url(../images/pexel-1.jpg);
     background-size: 1400px 300px;
     background-repeat: no-repeat;
@@ -95,7 +95,9 @@
     height: 150px;
     background: white;
     opacity: 90%;
-    box-shadow: 1px 2px 2px gray;
+    border: 0.1px solid brown;
+    box-shadow: 2px 3px 2px brown;
+    border-radius: 5px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -127,31 +129,36 @@
 }
 .achievement{
     width:1400px;
+    height:550px;
     margin: 0 auto;
-    background-image: url(../images/pixel-2.jpg);
-    background-size: 1400px 900px;
+    background-image: url(../images/b-4.png);
+    background-position: -50px 0px;
+    background-size: 1500px 100%;
 }
 .achievement>h1{
-    padding-top:20px;
+    padding-top:45px;
     font-size: 28px;
-    line-height: 2;
+    line-height: 2.5;
     font-weight: bolder;
-    color:white;
+    color:brown;
     text-align: center;
-    
 }
 .ach-content-all{
     display: flex;
-    margin-top: 20px;
+    margin-top: 0px;
+    margin-right: 10px;
     justify-content: space-evenly;
+    
 }
 .ach-content{
-    width:28%;
+    width:26.5%;
     margin-bottom: 20px;
     background-color: #fff;
     box-shadow: 1px 2px 2px gray;
     border-radius: 15px;
+    border: 1px solid brown;
     opacity:90%;
+    box-shadow: 8px 9px 2px brown;
 }
 .ach-content h1{
     font-size: 22px;
@@ -160,11 +167,30 @@
     padding-top:10px;
 
 }
-.ach-content p{
+.ach-content>p{
     font-size: 16px;
     line-height: 1.5;
     text-align: justify;
-    padding:10px;
+    padding:15px;
+}
+.ach-img{
+    height: 175px;
+    overflow: hidden;
+    position: relative;
+}
+.ach-img-text{
+    text-align: center;
+    background: rgba(165, 42,42, 0.9);
+    color: white;
+    position: absolute;
+    bottom: -32px;
+    z-index: 1001;
+    width:100%;
+    line-height: 1.55;
+    transition: all 0.7s;
+}
+.ach-img:hover .ach-img-text{
+    bottom: 0px;
 }
 .ach-content img{
     width:100%;
