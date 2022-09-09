@@ -70,6 +70,7 @@
     width:1400px;
     margin: 0 auto;
     margin-top: -1.5px;
+    margin-bottom: 1px;
     background-image: url(../images/pexel-1.jpg);
     background-size: 1400px 300px;
     background-repeat: no-repeat;
@@ -134,21 +135,43 @@
     background-image: url(../images/b-4.png);
     background-position: -50px 0px;
     background-size: 1500px 100%;
+    position: relative;
 }
-.achievement>h1{
+.achievement-title>h1{
     padding-top:45px;
     font-size: 28px;
     line-height: 2.5;
     font-weight: bolder;
     color:brown;
     text-align: center;
+    z-index: 1004;
+    
+}
+.achievement-title2>h1{
+    position: absolute;
+    top:45px;
+    left:560px;
+    font-size: 28px;
+    line-height: 2.5;
+    font-weight: bolder;
+    color:brown;
+    text-align: center;
+    z-index: 1004;
+}
+.achievement>img{
+    position: absolute;
+    top: 41px;
+    left: 33px;
+    width:1333px;
+    height:467px;
+    z-index: 1000;
 }
 .ach-content-all{
     display: flex;
     margin-top: 0px;
     margin-right: 10px;
     justify-content: space-evenly;
-    
+    z-index: 1002;
 }
 .ach-content{
     width:26.5%;
@@ -159,12 +182,14 @@
     border: 1px solid brown;
     opacity:90%;
     box-shadow: 8px 9px 2px brown;
+    z-index: 1002;
 }
 .ach-content h1{
     font-size: 22px;
     line-height: 1.6;
     text-align: center;
     padding-top:10px;
+    z-index: 1003;
 
 }
 .ach-content>p{
