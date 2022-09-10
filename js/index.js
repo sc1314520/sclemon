@@ -29,7 +29,7 @@ $(document).ready(function () {
         event.preventDefault();
         $('.my-intro').addClass("animate__fadeInUp");
       });
-      $('.c3').hover(function (event) {
+      $('.c2').hover(function (event) {
         event.preventDefault();
         $('.achievement').addClass("animate__fadeInUp");
       });
