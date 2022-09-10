@@ -74,7 +74,29 @@ $(document).ready(function () {
         event.preventDefault();
         $('.edu-open').toggleClass("edu-open-2");
       });
+      // basic
+      $('.r1').click(function (event) {
+        event.preventDefault();
+        $('.r1').addClass("change");
+        $('.r1').siblings().removeClass("change");
+        $('.my-intro-text').css("font-size","22px");
+      });
+      $('.r2').click(function (event) {
+        event.preventDefault();
+        $('.r2').addClass("change");
+        $('.r2').siblings().removeClass("change");
+        $('.my-intro-text').css("font-size","18px");
+      });
+      $('.r3').click(function (event) {
+        event.preventDefault();
+        $('.r3').addClass("change");
+        $('.r3').siblings().removeClass("change");
+        $('.my-intro-text').css("font-size","14px");
+      });
 
+
+
+      //--------------------------------------------//
       //忘記密碼
       $('.forgot-btn').click(function (event) {
         event.preventDefault();
