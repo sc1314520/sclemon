@@ -20,7 +20,20 @@ $(document).ready(function () {
         $('.project>h1').addClass("animate__bounceIn");
         $('.content').addClass("animate__fadeIn");
       });
-
+      // basic 
+      $('.ph').hover(function (event) {
+        event.preventDefault();
+        $('.chart-block-all').addClass("animate__fadeInUp");
+      });
+      $('.main-content-all').hover(function (event) {
+        event.preventDefault();
+        $('.my-intro').addClass("animate__fadeInUp");
+      });
+      $('.c3').hover(function (event) {
+        event.preventDefault();
+        $('.achievement').addClass("animate__fadeInUp");
+      });
+      //-----------------------------------------//
       $('.ocpjp-click').click(function (event) {
         event.preventDefault();
         $('.ocp-open').addClass("ocp-open-2");
