@@ -8,6 +8,60 @@
     <!-- js -->
     <script src="js/jquery2.2.3.min.js"></script>
     <script src="js/index.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Effort', 'Amount given'],
+          ['Innovation',     74],
+          ['none',     26],
+        ]);
+        var data2 = google.visualization.arrayToDataTable([
+          ['Effort', 'Amount given'],
+          ['Professionality',     83],
+          ['none',     17],
+        ]);
+        var data3 = google.visualization.arrayToDataTable([
+          ['Effort', 'Amount given'],
+          ['Efficiency',     92],
+          ['none',     8],
+        ]);
+        var data4 = google.visualization.arrayToDataTable([
+          ['Effort', 'Amount given'],
+          ['Responsibility',     88],
+          ['none',     12],
+        ]);
+        var data5 = google.visualization.arrayToDataTable([
+          ['Effort', 'Amount given'],
+          ['Problem-Solving',     82],
+          ['none',     18],
+        ]);
+
+        var options = {
+          pieHole: 0.48,
+          chartArea:{left:'10%',top:'10%',width:'80%',height:'80%'},
+          pieSliceTextStyle: {
+            color: 'none',
+          },
+          colors:['#EA0000','#F0F0F0'],
+          legend: 'none'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('donut_single1'));
+        var chart2 = new google.visualization.PieChart(document.getElementById('donut_single2'));
+        var chart3 = new google.visualization.PieChart(document.getElementById('donut_single3'));
+        var chart4 = new google.visualization.PieChart(document.getElementById('donut_single4'));
+        var chart5 = new google.visualization.PieChart(document.getElementById('donut_single5'));
+        chart.draw(data, options);
+        chart2.draw(data2, options);
+        chart3.draw(data3, options);
+        chart4.draw(data4, options);
+        chart5.draw(data5, options);
+      }
+    </script>
     <!-- css -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -63,7 +117,31 @@
             </div>
         </div>
     </div>
-    
+    <div class="chart-block-all">
+        <h1>Self-Judgment</h1>
+        <div class="chart-block">
+            <div class="chart">
+                <h2>Innovation</h2>
+                <div class="d1" id="donut_single1"></div>
+            </div>
+            <div class="chart">
+                <h2>Professionality</h2>
+                <div class="d1" id="donut_single2"></div>
+            </div>
+            <div class="chart">
+                <h2>Efficiency</h2>
+                <div class="d1" id="donut_single3"></div>
+            </div>
+            <div class="chart">
+                <h2>Responsibility</h2>
+                <div class="d1" id="donut_single4"></div>
+            </div>
+            <div class="chart">
+                <h2>Problem-Solving</h2>
+                <div class="d1" id="donut_single5"></div>
+            </div>
+        </div>
+    </div>
     <div class="my-intro">
         <h1>Self-Introduction</h1>
         <div class="my-intro-all">
@@ -77,7 +155,7 @@
                 <div class="my-intro-text">
                     <p>國中時期的我，課業上的問題時常是在社群討論區解決的，使我能夠在學科上奠定良好的基礎。他們的教學熱忱，促成了我在國三會考結束後，主動的回到社群中去幫助其他的學弟妹；⾄今已經三年，除了在萬⼈物理解題社群中獲得了全體答題率第七名的榮耀外，也得到了不少學弟妹的稱讚與肯定。林林總總的支持與回饋造就了我對於教學他⼈充滿著強烈的熱忱，希望能夠藉由教學與幫助他⼈的⽅式，將曾經受恩無量的恩情傳承下去，去影響、去擴展到更多的學⽣。</p>
                      </div>
-                <div class="my-intro-img"><img src="images/400694.jpg" alt=""></div>
+                <div class="my-intro-img"><img src="images/L1.jpg" alt=""></div>
             </div>
             <div class="my-intro-content">
                 <div class="my-intro-img"><img src="images/IMG_2702.JPG" alt=""></div>
