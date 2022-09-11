@@ -40,7 +40,7 @@
     <div class="about">
         <!-- ex -->
         <div class="edu-open">
-            <div class="forgot-all" id="forgot-all">
+            <div class="forgot-all" id="forgot-all" style="display: none;">
                 <div class="forgot" id="forgot">
                     <h1>找回密碼</h1>
                     <input type="text" name="forgot-account" id="forgot-account" placeholder="請輸入找回帳號"><br>
@@ -49,11 +49,11 @@
                     <button class="forgot-2" id="forgot-2">關閉</button>
                 </div>
             </div>
-            <div class="username" id="username">
+            <div class="username" id="username" style="display: none;">
                 <span class="us-first">使用者：</span>
                 <span class="us-second" id="us-second"></span>
             </div>
-            <div class="edu-hide" id="edu-hide">
+            <div class="edu-hide" id="edu-hide" style="display: none;">
                 <div class="ip" id="ip">
                     <h1>身份驗證機制</h1>
                     <input type="text" name="user" id="user" placeholder="請輸入權限名稱"><br>
@@ -61,9 +61,9 @@
                     <span class="forgot-btn" id="forgot-btn">忘記密碼？</span>
                 </div>
             </div>
-            <h1>學術資源區</h1>
+            <h1 style="display: none;">學術資源區</h1>
             <div class="edu-block-all">
-                <div class="edu-block">
+                <div class="edu-block" style="display: none;">
                     <h2>高一專區</h2>
                         <ul>
                             <li><a target="_blank" href="https://drive.google.com/file/d/1jD5JT_NJ7Vr2262rr9BgFYpsIIBBSATZ/view?usp=sharing">ch01 科學的態度與方法</a></li>
@@ -74,7 +74,7 @@
                             <li><a target="_blank" href="https://drive.google.com/file/d/12pAy7ObPffczjDJ5hw41VLlCzbohMn1D/view?usp=sharing">ch06 量子現象</a></li>
                         </ul>
                 </div>
-                <div class="edu-block">
+                <div class="edu-block" style="display: none;">
                     <h2>選修物理一</h2>
                         <ul>
                             <li><a target="_blank" href="https://drive.google.com/file/d/16LKFfg1ToFGfPOV-uyWtutLT4cwo_Lsz/view?usp=sharing">ch01 測量與不確定度</a></li>
@@ -85,7 +85,7 @@
                             <li><a target="_blank" href="https://drive.google.com/file/d/1UTIHX5pII9PxRMPsG8_KJU0p2ZjilQ_l/view?usp=sharing">ch06 萬有引力</a></li>
                         </ul>
                 </div>
-                <div class="edu-block">
+                <div class="edu-block" style="display: none;">
                     <h2>選修物理二</h2>
                         <ul>
                             <li><a target="_blank" href="https://drive.google.com/file/d/1LVqfvMW96lJ9h1VWHxgj5UUgznWa0ss4/view?usp=sharing">ch01 動量與角動量</a></li>
@@ -94,7 +94,7 @@
                             <li><a target="_blank" href="https://drive.google.com/file/d/1E0yPrKgytrXCyuXh0xke5W-02U43kxna/view?usp=sharing">ch04 熱學</a></li>
                         </ul>
                 </div>
-                <div class="edu-block">
+                <div class="edu-block" style="display: none;">
                     <h2>選修物理三</h2>
                         <ul>
                             <li><a target="_blank" href="https://drive.google.com/file/d/12XfKfpX5oZ58BkkUcN9sMbPokE4laws9/view?usp=sharing">ch01 波動</a></li>
@@ -103,7 +103,7 @@
                             <li><a target="_blank" href="https://drive.google.com/file/d/1Bo1ScOLAsXt8GVOYkfk-uLweffeHdDfP/view?usp=sharing">ch04 物理光學</a></li>
                         </ul>
                 </div>
-                <div class="edu-block">
+                <div class="edu-block" style="display: none;">
                     <h2>選修物理四</h2>
                         <ul>
                             <li><a target="_blank" href="https://drive.google.com/file/d/1A-vxPTGYCTCReKaX7nHbgOUWOE-f2fbB/view?usp=sharing">ch01 靜電學</a></li>
@@ -111,7 +111,7 @@
                             <li><a target="_blank" href="https://drive.google.com/file/d/1a5FOTSUPnYef7hEFjaKwZZZMaLCgWVVB/view?usp=sharing">ch03 電磁感應</a></li>
                         </ul>
                 </div>
-                <div class="edu-block">
+                <div class="edu-block" style="display: none;">
                     <h2>選修物理五</h2>
                         <ul>
                             <li><a target="_blank" href="https://drive.google.com/file/d/10MpisduOfK1XVhMQYpqeRw2aYdOm8D7s/view?usp=sharing">ch01 電路學</a></li>
@@ -158,8 +158,18 @@
                         </ul>
                 </div>
              </div>
-             <h1>影音教學區</h1>
-
+             <h1 class="vid-title">物理試教教材</h1>
+                <div class="vid vid-2">
+                    <a target="_blank" href="https://drive.google.com/file/d/1X2mTfDHTQDUMgmDXiB9IzLU8ZQ4VC1B_/view?usp=sharing"><i class="fa-regular fa-file-pdf"></i> 教學講義</a>
+                    <a target="_blank" href="https://drive.google.com/file/d/1YoDV-fL1nqjIcsQvMrxevu5oTWFPWgh7/view?usp=sharing"><i class="fa-regular fa-file-pdf"></i> 恢復係數</a>
+                    <a target="_blank" href="https://drive.google.com/file/d/1d2RfwhtPvZvgz_krcdFUoN8ID5_trkH3/view?usp=sharing"><i class="fa-regular fa-file-pdf"></i> 折合質量</a>
+                </div>
+                <h1 class="vid-title">物理試教影片</h1>
+                <div class="vid vid-3">
+                    <a target="_blank" href="https://drive.google.com/file/d/1I7BXBhhug48ZQGEYnPdTMW0pRn7lYF_H/view?usp=sharing"><i class="fa-brands fa-youtube"></i> 碰撞(上)</a>
+                    <a target="_blank" href="https://drive.google.com/file/d/1iMra-7hRGT1DD1tgXj_jphDLJ5oorHhQ/view?usp=sharing"><i class="fa-brands fa-youtube"></i> 碰撞(中)</a>
+                    <a target="_blank" href="https://drive.google.com/file/d/1HTJPh_tn-1DNnY8mHBrHUhAMi_XIPpbM/view?usp=sharing"><i class="fa-brands fa-youtube"></i> 碰撞(下)</a>
+                </div>
              <span class="declare">純屬個人教學演練使用，非公開/商用性資源。</span>
              <div class="teach-video">
 
