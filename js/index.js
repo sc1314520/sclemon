@@ -159,6 +159,19 @@ $(document).ready(function () {
         $('#9').show().siblings().hide();
         $('#9').css("display","flex");
       }
+      else if(search==10){
+        $('#10').show().siblings().hide();
+        $('#10').css("display","flex");
+      }
+      else if(search==11){
+        $('#11').show().siblings().hide();
+        $('#11').css("display","flex");
+      }
+      else if(search==12){
+        $('#12').show().siblings().hide();
+        $('#12').css("display","flex");
+      }
+      
         $('.page').hide();
         $('.page-c').hide();
       });
@@ -166,9 +179,17 @@ $(document).ready(function () {
       let i=1;
       $('.down').click(function (event) {
         event.preventDefault();
-        if(i<3){
+        if(i<4){
           i++;
           if(i==2){
+            $('#7').toggleClass("page-close");
+            $('#8').toggleClass("page-close");
+            $('#9').toggleClass("page-close");
+            $('#10').toggleClass("page-close");
+            $('#11').toggleClass("page-close");
+            $('#12').toggleClass("page-close");
+          }
+          else if(i==3){
             $('#4').toggleClass("page-close");
             $('#5').toggleClass("page-close");
             $('#6').toggleClass("page-close");
@@ -176,7 +197,7 @@ $(document).ready(function () {
             $('#8').toggleClass("page-close");
             $('#9').toggleClass("page-close");
           }
-          else if(i==3){
+          else if(i==4){
             $('#1').toggleClass("page-close");
             $('#2').toggleClass("page-close");
             $('#3').toggleClass("page-close");
@@ -192,7 +213,7 @@ $(document).ready(function () {
         event.preventDefault();
         if(i>1){
           i--;
-          if(i==2){
+          if(i==3){
             $('#1').toggleClass("page-close");
             $('#2').toggleClass("page-close");
             $('#3').toggleClass("page-close");
@@ -200,13 +221,21 @@ $(document).ready(function () {
             $('#5').toggleClass("page-close");
             $('#6').toggleClass("page-close");
           }
-          else if(i==1){
+          else if(i==2){
             $('#4').toggleClass("page-close");
             $('#5').toggleClass("page-close");
             $('#6').toggleClass("page-close");
             $('#7').toggleClass("page-close");
             $('#8').toggleClass("page-close");
             $('#9').toggleClass("page-close");
+          }
+          else if(i==1){
+            $('#7').toggleClass("page-close");
+            $('#8').toggleClass("page-close");
+            $('#9').toggleClass("page-close");
+            $('#10').toggleClass("page-close");
+            $('#11').toggleClass("page-close");
+            $('#12').toggleClass("page-close");
           }
         }
         let x =document.getElementById("page-c");
@@ -755,3 +784,4 @@ function forgot(){
     }
   
 }
+
