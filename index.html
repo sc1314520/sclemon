@@ -44,124 +44,7 @@
     <div class="about">
         <!-- ex -->
         <div class="edu-open">
-            <div class="forgot-all" id="forgot-all" style="display: none;">
-                <div class="forgot" id="forgot">
-                    <h1>找回密碼</h1>
-                    <input type="text" name="forgot-account" id="forgot-account" placeholder="請輸入找回帳號"><br>
-                    <input type="password" name="forgot-pass" id="forgot-pass" placeholder="請輸入電子信箱"><br>
-                    <button class="forgot-1" onclick="forgot();">送出</button>
-                    <button class="forgot-2" id="forgot-2">關閉</button>
-                </div>
-            </div>
-            <div class="username" id="username" style="display: none;">
-                <span class="us-first">使用者：</span>
-                <span class="us-second" id="us-second"></span>
-            </div>
-            <div class="edu-hide" id="edu-hide" style="display: none;">
-                <div class="ip" id="ip">
-                    <h1>身份驗證機制</h1>
-                    <input type="text" name="user" id="user" placeholder="請輸入權限名稱"><br>
-                    <input type="password" name="user-pw" id="user-pw" placeholder="請輸入通行密碼"><br>
-                    <span class="forgot-btn" id="forgot-btn">忘記密碼？</span>
-                </div>
-            </div>
             <h1 style="display: none;">學術資源區</h1>
-            <div class="edu-block-all">
-                <div class="edu-block" style="display: none;">
-                    <h2>高一專區</h2>
-                        <ul>
-                            <li><a target="_blank" href="https://drive.google.com/file/d/1jD5JT_NJ7Vr2262rr9BgFYpsIIBBSATZ/view?usp=sharing">ch01 科學的態度與方法</a></li>
-                            <li><a target="_blank" href="https://drive.google.com/file/d/1_8y3qGyRSf3TjnPdTkpW7CeuXCg0svVp/view?usp=sharing">ch02 物體的運動</a></li>
-                            <li><a target="_blank" href="https://drive.google.com/file/d/12fXukpu4l6jWwPPzTjFmq5ooVs8SJN2D/view?usp=sharing">ch03 物質組成與作用</a></li>
-                            <li><a target="_blank" href="https://drive.google.com/file/d/1mmROKCKQNPRmFXV3YYF5yVjKXBNcMv2m/view?usp=sharing">ch04 電與磁的統一</a></li>
-                            <li><a target="_blank" href="https://drive.google.com/file/d/1fNB69ipPKfLQnmRiWIAGJbWeYzBp2x9r/view?usp=sharing">ch05 能量</a></li>
-                            <li><a target="_blank" href="https://drive.google.com/file/d/12pAy7ObPffczjDJ5hw41VLlCzbohMn1D/view?usp=sharing">ch06 量子現象</a></li>
-                        </ul>
-                </div>
-                <div class="edu-block" style="display: none;">
-                    <h2>選修物理一</h2>
-                        <ul>
-                            <li><a target="_blank" href="https://drive.google.com/file/d/16LKFfg1ToFGfPOV-uyWtutLT4cwo_Lsz/view?usp=sharing">ch01 測量與不確定度</a></li>
-                            <li><a target="_blank" href="https://drive.google.com/file/d/120mz_dqR5o1if45PbSTK4_RYNw7E9YcP/view?usp=sharing">ch02 直線運動</a></li>
-                            <li><a target="_blank" href="https://drive.google.com/file/d/1_7R6SX3prqqElY-knVj_Sl3czdfHp2gn/view?usp=sharing">ch03 平面運動</a></li>
-                            <li><a target="_blank" href="https://drive.google.com/file/d/192jqetSS4K7A9IbuWn8j8aUicAAYRGu4/view?usp=sharing">ch04 牛頓運動定律</a></li>
-                            <li><a target="_blank" href="https://drive.google.com/file/d/1QXSj0crRcLscA9GvpxsBmcLkqmOidXfR/view?usp=sharing">ch05 週期運動</a></li>
-                            <li><a target="_blank" href="https://drive.google.com/file/d/1UTIHX5pII9PxRMPsG8_KJU0p2ZjilQ_l/view?usp=sharing">ch06 萬有引力</a></li>
-                        </ul>
-                </div>
-                <div class="edu-block" style="display: none;">
-                    <h2>選修物理二</h2>
-                        <ul>
-                            <li><a target="_blank" href="https://drive.google.com/file/d/1LVqfvMW96lJ9h1VWHxgj5UUgznWa0ss4/view?usp=sharing">ch01 動量與角動量</a></li>
-                            <li><a target="_blank" href="https://drive.google.com/file/d/1GFtQh_wCKyz7QllhAsfyEnjDYUy8glO4/view?usp=sharing">ch02 功與能量</a></li>
-                            <li><a target="_blank" href="https://drive.google.com/file/d/1X2mTfDHTQDUMgmDXiB9IzLU8ZQ4VC1B_/view?usp=sharing">ch03 牛頓運動定律應用</a></li>
-                            <li><a target="_blank" href="https://drive.google.com/file/d/1E0yPrKgytrXCyuXh0xke5W-02U43kxna/view?usp=sharing">ch04 熱學</a></li>
-                        </ul>
-                </div>
-                <div class="edu-block" style="display: none;">
-                    <h2>選修物理三</h2>
-                        <ul>
-                            <li><a target="_blank" href="https://drive.google.com/file/d/12XfKfpX5oZ58BkkUcN9sMbPokE4laws9/view?usp=sharing">ch01 波動</a></li>
-                            <li><a target="_blank" href="https://drive.google.com/file/d/1F-a4UALrwwvPFgjMzsXBnEn3WerZq-dh/view?usp=sharing">ch02 聲波</a></li>
-                            <li><a target="_blank" href="https://drive.google.com/file/d/1zttiR_ciX7zLGLYng2MSm1MvQ0OyIvRd/view?usp=sharing">ch03 幾何光學</a></li>
-                            <li><a target="_blank" href="https://drive.google.com/file/d/1Bo1ScOLAsXt8GVOYkfk-uLweffeHdDfP/view?usp=sharing">ch04 物理光學</a></li>
-                        </ul>
-                </div>
-                <div class="edu-block" style="display: none;">
-                    <h2>選修物理四</h2>
-                        <ul>
-                            <li><a target="_blank" href="https://drive.google.com/file/d/1A-vxPTGYCTCReKaX7nHbgOUWOE-f2fbB/view?usp=sharing">ch01 靜電學</a></li>
-                            <li><a target="_blank" href="https://drive.google.com/file/d/1yU6e8MP3ssM4pVOJhr3q9_ArhehQH2Li/view?usp=sharing">ch02 電流的磁效應</a></li>
-                            <li><a target="_blank" href="https://drive.google.com/file/d/1a5FOTSUPnYef7hEFjaKwZZZMaLCgWVVB/view?usp=sharing">ch03 電磁感應</a></li>
-                        </ul>
-                </div>
-                <div class="edu-block" style="display: none;">
-                    <h2>選修物理五</h2>
-                        <ul>
-                            <li><a target="_blank" href="https://drive.google.com/file/d/10MpisduOfK1XVhMQYpqeRw2aYdOm8D7s/view?usp=sharing">ch01 電路學</a></li>
-                            <li><a target="_blank" href="https://drive.google.com/file/d/1sRJgP_jWZnUxzRF8XOlpl4g_J_ogcR45/view?usp=sharing">ch02 量子現象</a></li>
-                            <li><a target="_blank" href="https://drive.google.com/file/d/1soH7CPqG2OvxdIHbiTtyiJHD9u0F_Zej/view?usp=sharing">ch03 原子結構</a></li>
-                        </ul>
-                </div>
-                <div class="edu-block" style="display:none;">
-                    <h2>學測複習講義一</h2>
-                        <ul>
-                            <li><a target="_blank" href="https://drive.google.com/file/d/1SJJK577a-djGnxLqz5TOgZcRpRVq2oMQ/view?usp=sharing">英文複習講義</a></li>
-                            <li><a target="_blank" href="https://drive.google.com/file/d/1I6hvQePVY6oLm7--IAzn5Y0gNrUnnrp8/view?usp=sharing">數A複習講義</a></li>
-                            <li><a target="_blank" href="https://drive.google.com/file/d/1n_Jod4Lvs2n6LPINUYZQS_mMaKu47W5E/view?usp=sharing">數B複習講義</a></li>
-                            <li><a target="_blank" href="https://drive.google.com/file/d/1LtS7z_pVxLgz5YtXioB4TKcvIrR6fSmD/view?usp=sharing">地理複習講義</a></li>
-                            <li><a target="_blank" href="https://drive.google.com/file/d/1XrSSmQ_kdprQbFTMHtsQSYOgpsKk5V1G/view?usp=sharing">歷史複習講義</a></li>
-                            <li><a target="_blank" href="https://drive.google.com/file/d/1rYuB_wOXnz-59don0h5iZO5mkNp2Q20l/view?usp=sharing">公民複習講義</a></li>
-                            <li><a target="_blank" href="https://drive.google.com/file/d/1ds-ih05Hq14gHzHwxYx3oX78myEXO3sF/view?usp=sharing">物理複習講義</a></li>
-                            <li><a target="_blank" href="https://drive.google.com/file/d/1ux8pjw2Rf_1HTKhhxuksug1_3dNc1zyf/view?usp=sharing">化學複習講義</a></li>
-                            <li><a target="_blank" href="https://drive.google.com/file/d/1Ql2gCOdReHTXmIBrkz88lb0T0eM28j9C/view?usp=sharing">生物複習講義</a></li>
-                        </ul>
-                </div>
-                <div class="edu-block" style="display:none;">
-                    <h2>學測複習講義二</h2>
-                    <ul>
-                        <li><a target="_blank" href="https://drive.google.com/file/d/1IqjJcmLGrnfp0QwaKk-mjOVo4EJJX77R/view?usp=sharing">數A複習講義</a></li>
-                        <li><a target="_blank" href="https://drive.google.com/file/d/1813BD0CfbJmctydZQ5zOI1OTu0ltpkw0/view?usp=sharing">物理複習講義</a></li>
-                        <li><a target="_blank" href="https://drive.google.com/file/d/14ZpAgFXnIuFXLoijpm6-J28YhzjX2b77/view?usp=sharing">化學複習講義</a></li>
-                        <li><a target="_blank" href="https://drive.google.com/file/d/13TQFjMb6bn-1_VnZz2NOcs6q1KzVEFCu/view?usp=sharing">生物複習講義</a></li>
-                        <li><a target="_blank" href="https://drive.google.com/file/d/1bFdV6BuGM27aK0RqFNOgkCgEHNJzTnvn/view?usp=sharing">地科複習講義</a></li>
-                        <li><a target="_blank" href="https://drive.google.com/file/d/1eufcAZ8Rb0zltL5_f-kqwlop7NHMVGul/view?usp=sharing">歷史複習講義</a></li>
-                        <li><a target="_blank" href="https://drive.google.com/file/d/1ZDYB8woQc9d32sIPtkxUFwRAD0QYYZuS/view?usp=sharing">地理上複習講義</a></li>
-                        <li><a target="_blank" href="https://drive.google.com/file/d/1UOunPfMShxjauaBRe1jqdRsf1YWCzqaE/view?usp=sharing">地理中複習講義</a></li>
-                        <li><a target="_blank" href="https://drive.google.com/file/d/1hd82sksK4coVWTcMqKDjjTQ84eJB4M96/view?usp=sharing">地理下複習講義</a></li>
-                        <li><a target="_blank" href="https://drive.google.com/file/d/1VAqVvoUdCxL8TSML-9C-06UTGY7adn1X/view?usp=sharing">公民複習講義</a></li>
-                    </ul>
-                </div>
-                <div class="edu-block" style="display:none;">
-                    <h2>超素養閱讀</h2>
-                        <ul>
-                            <li><a target="_blank" href="https://drive.google.com/file/d/1UALY_6zte2sAJtRNy-PqhPAdVWu9lh-k/view?usp=sharing">物理閱讀與探究</a></li>
-                            <li><a target="_blank" href="https://drive.google.com/file/d/1XF3DpdDoSwXiGZInXRAh0Y2C3tnrD-1q/view?usp=sharing">化學閱讀與探究</a></li>
-                            <li><a target="_blank" href="https://drive.google.com/file/d/12s8zgT95hWsjhNUelRAc4iH3Dzs0d8jM/view?usp=sharing">生物閱讀與探究</a></li>
-                            <li><a target="_blank" href="https://drive.google.com/file/d/1sjOhRea4PvJ2DR8qTuRAXt8Oj4fsOupM/view?usp=sharing">地科閱讀與探究</a></li>
-                        </ul>
-                </div>
-             </div>
              <h1 class="vid-title">物理試教教材</h1>
                 <div class="vid vid-2">
                     <a target="_blank" href="https://drive.google.com/file/d/1X2mTfDHTQDUMgmDXiB9IzLU8ZQ4VC1B_/view?usp=sharing"><i class="fa-regular fa-file-pdf"></i> 教學講義</a>
@@ -178,7 +61,6 @@
              <div class="teach-video">
 
              </div>
-            <button style="display: none;" id="edu-v" class="verify-button2" onclick="EDU();">verify</button>
             <button class="close-button4">close</button>
         </div>
 
@@ -223,14 +105,7 @@
         </div>
 
         <div class="fans-open">
-            <div class="fans-hide" id="fans-hide" style="display: none;">
-                <h1>身份驗證機制</h1>
-                <input id="salt" type="hidden" value="1314">
-                <input type="password" class="fans-pw" id="password" name="password" placeholder="請輸入驗證碼">
-                <button class="verify-button" onclick="VS();" placeholder="請輸入驗證碼">verify</button>
-            </div>
             <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FAnimeJSAS%2F&tabs=timeline&width=800&height=300&small_header=true&adapt_container_width=false&hide_cover=false&show_facepile=true&appId" width="800" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-            
             <button class="close-button2">close</button>
         </div>
        
@@ -286,7 +161,7 @@
                 <div class="skill-text">RWD</div>
                 <div class="level">精熟</div>
             </li>
-            <li>
+            <li style="display:none ;">
                 <img src="images/pngegg.png" alt=""> 
                 <div class="skill-text">JQuery</div>
                 <div class="level2">中等</div>
@@ -309,7 +184,12 @@
             <li>
                 <img class="vue" src="images/vue.png" alt=""> 
                 <div class="skill-text">Vue.js</div>
-                <div class="level2" style="background: brown ;">12月</div>
+                <div class="level2" style="background: brown ;">進行</div>
+            </li>
+            <li>
+                <img src="images/Google_Apps_Script.svg.png" alt=""> 
+                <div class="skill-text">GAS</div>
+                <div class="level2" style="background: brown ;">進行</div>
             </li>
             <li>
                 <img src="images/java.png" alt=""> 
@@ -350,6 +230,9 @@
                         <option value="10">10. JavaScript 自學筆記</option>
                         <option value="11">11. Yun 蘭嶼日記</option>
                         <option value="12">12. 高雄一日遊</option>
+                        <option value="13">13. ITS-304 Java 國際認證</option>
+                        <option value="14">14. GAS串接：訂餐系統</option>
+                        <option value="15">15. VueJS 自學筆記</option>
                 </select>
             </div>
             <div class="search-ico-1">
@@ -359,7 +242,82 @@
         <h1 class="animate__animated">Recent Project</h1>
         <p>See more about these on my <a href="https://github.com/SC1314520">GitHub</a></p>
         <div>
-            <div class="content show9 animate__animated" id="12" >
+            <div class="content show15 animate__animated" id="15" >
+                <div class="href">
+                    <img src="images/vuef.png" alt="">
+                    <a target="_blank" href="https://github.com/sc1314520/Vue-self"><div class="content-img-text">
+                        <span class="content-img-text-1">前往頁面</span>
+                    </div></a>
+                </div>
+                <div class="introduction">
+                    <div class="intro-text">
+                        <h1>VueJS 自學筆記</h1>
+                        <p>自主學習熱門企業常用前端框架</p>
+                    </div>
+                    <div class="intro-text-2">
+                        基本技巧：JavaScript/VueJS<br/>
+                        程式運用：VScode<br>
+                    </div>
+                    <div class="intro-text-3">
+                        製作時間：2022.11.10
+                    </div>
+                    <div class="intro-text-4">
+                        詳細傳送門：<a target="_blank" href="https://github.com/sc1314520/Vue-self">點擊連結</a>
+                    </div>
+                </div>
+            </div>
+            <div class="content show14 animate__animated" id="14" >
+                <div class="href">
+                    <img src="images/ee382621ccb72aa8e10cf1d27e277c253a47c3b9.webp" alt="">
+                    <a target="_blank" href="https://sc1314520.github.io/lunch.github.io/"><div class="content-img-text">
+                        <span class="content-img-text-1">前往頁面</span>
+                    </div></a>
+                </div>
+                <div class="introduction">
+                    <div class="intro-text">
+                        <h1>GAS串接：媽媽便當-訂單系統</h1>
+                        <p>以自學的方式完成的第一個全端作品</p>
+                    </div>
+                    <div class="intro-text-2">
+                        基本技巧：JavaScript/VueJS/Fetch/App Script/Google sheet<br/>
+                        程式運用：VScode<br>
+                        補充要點：製作成簡易 Ｗeb App <br>
+                        注意事項：此為手機版網頁（ 375 px )
+                    </div>
+                    <div class="intro-text-3">
+                        製作時間：2022.11.03
+                    </div>
+                    <div class="intro-text-4">
+                        詳細傳送門：<a target="_blank" href="https://sc1314520.github.io/lunch.github.io/">點擊連結</a>
+                    </div>
+                </div>
+            </div>
+            <div class="content show13 animate__animated" id="13" >
+                <div class="href">
+                    <img src="images/Its.png" alt="">
+                    <a target="_blank" href="https://www.credly.com/badges/176defd6-b3c9-41a2-9c98-87678fc5ae6c/public_url?fbclid=IwAR3vII3br0qfkBdsnSvWgEGZ9gfs0RzwARlC84Ft84uhqr5WTyWIc-1urN0/"><div class="content-img-text">
+                        <span class="content-img-text-1">前往頁面</span>
+                    </div></a>
+                </div>
+                <div class="introduction">
+                    <div class="intro-text">
+                        <h1>ITS-304 Java 國際認證</h1>
+                        <p>國外大學程式設計採認免修之認證</p>
+                    </div>
+                    <div class="intro-text-2">
+                        基本技巧：Java SE 17<br/>
+                        考試成績：970 / 1000 <br>
+                        認證單位：Pearson Vue / Certiport<br>
+                    </div>
+                    <div class="intro-text-3">
+                        製作時間：2022.10.16
+                    </div>
+                    <div class="intro-text-4">
+                        詳細傳送門：<a target="_blank" href="https://www.credly.com/badges/176defd6-b3c9-41a2-9c98-87678fc5ae6c/public_url?fbclid=IwAR3vII3br0qfkBdsnSvWgEGZ9gfs0RzwARlC84Ft84uhqr5WTyWIc-1urN0">點擊連結</a>
+                    </div>
+                </div>
+            </div>
+            <div class="content show12 animate__animated page-close" id="12" >
                 <div class="href">
                     <img src="images/card.png" alt="">
                     <a target="_blank" href="https://sc1314520.github.io/Card.github.io/"><div class="content-img-text">
@@ -384,7 +342,7 @@
                     </div>
                 </div>
             </div>
-            <div class="content show9 animate__animated" id="11" >
+            <div class="content show11 animate__animated page-close" id="11" >
                 <div class="href">
                     <img src="images/lanyu.png" alt="">
                     <a  href="#"><div class="content-img-text">
@@ -409,7 +367,7 @@
                     </div>
                 </div>
             </div>
-            <div class="content show9 animate__animated" id="10" >
+            <div class="content show10 animate__animated page-close" id="10" >
                 <div class="href">
                     <img src="images/jsself.png" alt="">
                     <a target="_blank" href="https://github.com/sc1314520/JavaScript-self"><div class="content-img-text">
