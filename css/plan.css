@@ -61,14 +61,14 @@
     margin: 0 auto;
     margin-top:5px;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     background: url(../images/pexels-neale-lasalle-631477.jpg);
 }
 .ocp-list{
     background: rgba(255,255,255,0.6);
-    width:560px;
-    height:630px;
+    width:600px;
+    height:640px;
     box-shadow: 10px 10px 2px white;
     border-radius: 4px;
 }
@@ -85,7 +85,7 @@
 }
 .ocp-list>ul li{
     margin-top:20px;
-    margin-left:70px;
+    margin-left:50px;
     font-size: 18px;
     color: white;
 }
@@ -113,7 +113,7 @@
 
 .check{
     color:red;
-    font-size: 24px;
+    font-size: 16px;
 }
 .run{
     color:brown;
