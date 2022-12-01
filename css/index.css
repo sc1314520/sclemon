@@ -404,8 +404,8 @@
     position: absolute;
     border-radius: 10px;
     box-shadow: 1px 1px 1px gray;
-    width:800px;
-    height:400px;
+    width:740px;
+    height:430px;
     border:1px solid white;
     top:-85px;
     left: 300px;
@@ -417,10 +417,10 @@
     display: block;
 }
 .skills-text-mark-block-img{
-    width:740px;
-    height:300px;
-    margin-left: 30px;
-    margin-top: 50px;
+    width:724px;
+    height:350px;
+    margin-left: 10px;
+    margin-top: 40px;
 }
 .skills-text-mark-block-img img{
     width:100%;
