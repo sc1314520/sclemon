@@ -65,6 +65,7 @@
     margin-left:400px;
     margin-top:-20px;
     z-index: 1000;
+    display: none;
 }
 .edu-open{
     margin-top:20px;
@@ -410,6 +411,7 @@
     left: 300px;
     background: white;
     z-index:1000;
+    display: none;
 }
 .skills-text-mark-block-2{
     display: block;
@@ -596,7 +598,6 @@
 .search-select{
     height: 26px;
     z-index: 1002;
-    width:190px;
     border-radius: 0;
     border: 2px solid brown;
 }
@@ -667,11 +668,8 @@
 .content .intro-text-2 ,.intro-text-3 ,.intro-text-4{
     color:rgb(190, 189, 189);
     line-height: 2;
-    margin-top:40px;
-    margin-left:70px;
-}
-.content .intro-text-4{
-    margin-top:20px;
+    margin-top:15px;
+    margin-left:20px;
 }
 .content .intro-text-4 a{
     text-decoration: none;

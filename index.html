@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- js -->
     <script src="js/jquery2.2.3.min.js"></script>
+    <script src="js/vue.js"></script>
     <script src="js/index.js"></script>
     <!-- css -->
     <link rel="stylesheet" href="css/reset.css">
@@ -17,15 +18,21 @@
     <link rel="icon" href="images/mode-standard-phoenix-svgrepo-com.svg">
     
     <title>Lemon Lin | My personal Web</title>
+    <style>
+        [v-cloak]{
+            display: none;
+        }
+    </style>
 </head>
 <body>
+<div id="list" v-cloak>
     <div class="header">
         <div class="img">
             <img src="images/logo.png" alt="">
         </div>
         <div class="list">
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index2.html">Home</a></li>
                 <li><a href="basic.html">Basic</a></li>
                 <li><a href="academic.html">Academic</a></li>
                 <li><a href="process.html">Process</a></li>
@@ -43,7 +50,7 @@
     </div>
     <div class="about">
         <!-- ex -->
-        <div class="edu-open">
+        <div class="edu-open" v-if="edu_flag">
             <h1 style="display: none;">學術資源區</h1>
              <h1 class="vid-title">物理試教教材</h1>
                 <div class="vid vid-2">
@@ -61,15 +68,9 @@
              <div class="teach-video">
 
              </div>
-            <button class="close-button4">close</button>
+            <button class="close-button4" @click="edu_close">close</button>
         </div>
-
-        <div class="ntnu-open">
-            <img src="images/sophomore-vs.png" alt="">
-            <button class="close-button3">close</button>
-        </div>
-
-        <div class="ocp-open">
+        <div class="ocp-open" v-if="ocp_flag">
             <h2>OCP Java SE 11 Developer</h2>
             <img src="images/cert.png" alt="">
             <div class="ocp-open-text-all">
@@ -101,12 +102,12 @@
                     </div>
                 </div>
             </div>
-            <button class="close-button">close</button>
+            <button class="close-button" @click="ocp_close()">close</button>
         </div>
 
-        <div class="fans-open">
+        <div class="fans-open" v-if="fans_flag">
             <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FAnimeJSAS%2F&tabs=timeline&width=800&height=300&small_header=true&adapt_container_width=false&hide_cover=false&show_facepile=true&appId" width="800" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-            <button class="close-button2">close</button>
+            <button class="close-button2" @click="fans_close()">close</button>
         </div>
        
        <!-- main -->
@@ -116,19 +117,19 @@
         <p>Pursue my ideals and face our own life with enthusiasm.</p>
         <div class="about-block">
             <ul>
-                <li class="edu-click"><img src="images/education.png" alt="">
+                <li class="edu-click" @click="edu_open"><img src="images/education.png" alt="">
                     <div class="img-text">特殊績優師培生</div>
                 </li>
                 <li class="ntnu-click"><img src="images/physics.png" alt="">
-                    <div class="img-text">物理學系在校生</div>
+                    <div class="img-text">工程科學系在校生</div>
                 </li>
                 <li><img src="images/UI-UX.png" alt="">
                     <div class="img-text">前端企業實習生</div>
                 </li>
-                <li class="ocpjp-click"><img src="images/back-end.png" alt="點擊查看詳細">
+                <li class="ocpjp-click" @click="ocp_open"><img src="images/back-end.png" alt="點擊查看詳細">
                     <div class="img-text">OCPJP 程式設計師</div>
                 </li>
-                <li class="fans-click"><img src="images/fans.png" alt="">
+                <li class="fans-click" @click="fans_open"><img src="images/fans.png" alt="">
                     <div class="img-text">十萬粉絲社群帳號創辦人</div>
                 </li>
             </ul>
@@ -137,11 +138,11 @@
     <div class="skills">
         <div class="mark1"></div>
         <div class="mark2"></div>
-        <button class="skills-text-mark" id="skill-open">查看詳情</button>
-        <div class="skills-text-mark-block">
+        <button class="skills-text-mark" id="skill-open" @click="skill_open">查看詳情</button>
+        <div class="skills-text-mark-block" v-if="skill_flag">
             <div class="skills-text-mark-block-img">
                 <img src="images/pr2.png" alt="">
-                <button class="skills-btn-1" id="skill-close">close</button>
+                <button class="skills-btn-1" id="skill-close" @click="skill_close">close</button>
             </div>
         </div>
         <h1 class="animate__animated">Skills For My Engineer Career</h1>
@@ -216,424 +217,47 @@
     <div class="project">
         <div class="search">
             <div>
-                <select name="search-select" id="search-select" class="search-select">
-                        <option value="all">顯示全部</option>
-                        <option value="1">1. 六角學院初體驗</option>
-                        <option value="2">2. RWD 六角西餐廳</option>
-                        <option value="3">3. SASS/SCSS 彙整</option>
-                        <option value="4">4. 滾動視差網頁設計</option>
-                        <option value="5">5. Swing不確定度計算機</option>
-                        <option value="6">6. OCPJP SE 11 訓練過程</option>
-                        <option value="7">7. 不確定度計算機網頁版</option>
-                        <option value="8">8. JDBC的應用與串連</option>
-                        <option value="9">9. OCPJP SE 11 Developer</option>
-                        <option value="10">10. JavaScript 自學筆記</option>
-                        <option value="11">11. Yun 蘭嶼日記</option>
-                        <option value="12">12. 高雄一日遊</option>
-                        <option value="13">13. ITS-304 Java 國際認證</option>
-                        <option value="14">14. GAS串接：訂餐系統</option>
-                        <option value="15">15. JS爬蟲：學測查詢系統</option>
+                <select name="search-select" id="search-select" class="search-select" v-model="sr">
+                        <option v-for="obj in search" :value="obj.id">{{obj.title}}</option>
                 </select>
             </div>
-            <div class="search-ico-1">
-                <i class="search-icon-2 fa-solid fa-magnifying-glass"></i>
+            <div class="search-ico-1" @click="find()">
+                <i class="search-icon-2 fa-solid fa-magnifying-glass" id="se"></i>
             </div>
         </div>
         <h1 class="animate__animated">Recent Project</h1>
         <p>See more about these on my <a href="https://github.com/SC1314520">GitHub</a></p>
+        <!-- -->
         <div>
-            <div class="content show15 animate__animated" id="15" >
+            <div v-for="obj in arr" class="content show15 animate__animated" :id="obj.id" >
                 <div class="href">
-                    <img src="images/sr.png" alt="">
-                    <a target="_blank" href="https://sc1314520.github.io/GSAT-112/"><div class="content-img-text">
+                    <img :src="obj.img" alt="">
+                    <a target="_blank" :href="obj.url"><div class="content-img-text">
                         <span class="content-img-text-1">前往頁面</span>
                     </div></a>
                 </div>
                 <div class="introduction">
                     <div class="intro-text">
-                        <h1>[JS 爬蟲] 112學測甄試查詢網站</h1>
-                        <p>利用 VueJS 搭配 JS 爬蟲所撰寫之網頁</p>
+                        <h1>{{obj.title}}</h1>
+                        <p>{{obj.subtitle}}</p>
                     </div>
-                    <div class="intro-text-2">
-                        基本技巧：JavaScript/VueJS/AppScript<br/>
-                        程式運用：VScode/Google Sheet / CheerIO<br>
-                        里程碑記錄：2023/01/06 使用人數達 10000 次
-                    </div>
-                    <div class="intro-text-3">
-                        製作時間：2022.12.30
+                    <div class="intro-text-2" v-html="obj.paragraph">
                     </div>
                     <div class="intro-text-4">
-                        詳細傳送門：<a target="_blank" href="https://sc1314520.github.io/GSAT-112/">點擊連結</a>
+                        詳細傳送門：<a target="_blank" :href="obj.url">點擊連結</a>
                     </div>
-                </div>
-            </div>
-            <div class="content show14 animate__animated" id="14" >
-                <div class="href">
-                    <img src="images/ee382621ccb72aa8e10cf1d27e277c253a47c3b9.webp" alt="">
-                    <a target="_blank" href="https://sc1314520.github.io/lunch.github.io/"><div class="content-img-text">
-                        <span class="content-img-text-1">前往頁面</span>
-                    </div></a>
-                </div>
-                <div class="introduction">
-                    <div class="intro-text">
-                        <h1>GAS串接：媽媽便當-訂單系統</h1>
-                        <p>以自學的方式完成的第一個全端作品</p>
-                    </div>
-                    <div class="intro-text-2">
-                        基本技巧：JavaScript/VueJS/Fetch/App Script/Google sheet<br/>
-                        程式運用：VScode<br>
-                        補充要點：製作成簡易 Ｗeb App <br>
-                        注意事項：此為手機版網頁（ 375 px )
-                    </div>
-                    <div class="intro-text-3">
-                        製作時間：2022.11.03
-                    </div>
-                    <div class="intro-text-4">
-                        詳細傳送門：<a target="_blank" href="https://sc1314520.github.io/lunch.github.io/">點擊連結</a>
-                    </div>
-                </div>
-            </div>
-            <div class="content show13 animate__animated" id="13" >
-                <div class="href">
-                    <img src="images/Its.png" alt="">
-                    <a target="_blank" href="https://www.credly.com/badges/176defd6-b3c9-41a2-9c98-87678fc5ae6c/public_url?fbclid=IwAR3vII3br0qfkBdsnSvWgEGZ9gfs0RzwARlC84Ft84uhqr5WTyWIc-1urN0/"><div class="content-img-text">
-                        <span class="content-img-text-1">前往頁面</span>
-                    </div></a>
-                </div>
-                <div class="introduction">
-                    <div class="intro-text">
-                        <h1>ITS-304 Java 國際認證</h1>
-                        <p>國外大學程式設計採認免修之認證</p>
-                    </div>
-                    <div class="intro-text-2">
-                        基本技巧：Java SE 17<br/>
-                        考試成績：970 / 1000 <br>
-                        認證單位：Pearson Vue / Certiport<br>
-                    </div>
-                    <div class="intro-text-3">
-                        製作時間：2022.10.16
-                    </div>
-                    <div class="intro-text-4">
-                        詳細傳送門：<a target="_blank" href="https://www.credly.com/badges/176defd6-b3c9-41a2-9c98-87678fc5ae6c/public_url?fbclid=IwAR3vII3br0qfkBdsnSvWgEGZ9gfs0RzwARlC84Ft84uhqr5WTyWIc-1urN0">點擊連結</a>
-                    </div>
-                </div>
-            </div>
-            <div class="content show12 animate__animated page-close" id="12" >
-                <div class="href">
-                    <img src="images/card.png" alt="">
-                    <a target="_blank" href="https://sc1314520.github.io/Card.github.io/"><div class="content-img-text">
-                        <span class="content-img-text-1">前往頁面</span>
-                    </div></a>
-                </div>
-                <div class="introduction">
-                    <div class="intro-text">
-                        <h1>作品七：與云寶的高雄一日遊</h1>
-                        <p>專為我和Yun的二十歲生日所製作的紀錄</p>
-                    </div>
-                    <div class="intro-text-2">
-                        基本技巧：HTML/CSS/JavaScript<br/>
-                        程式運用：VScode<br>
-                        注意事項：此為手機版網頁（ 375 px )
-                    </div>
-                    <div class="intro-text-3">
-                        製作時間：2022.10.09
-                    </div>
-                    <div class="intro-text-4">
-                        詳細傳送門：<a target="_blank" href="https://sc1314520.github.io/Card.github.io/">點擊連結</a>
-                    </div>
-                </div>
-            </div>
-            <div class="content show11 animate__animated page-close" id="11" >
-                <div class="href">
-                    <img src="images/lanyu.png" alt="">
-                    <a  href="#"><div class="content-img-text">
-                        <span class="content-img-text-1">暫時不開放</span>
-                    </div></a>
-                </div>
-                <div class="introduction">
-                    <div class="intro-text">
-                        <h1>作品六：Yun 的蘭嶼日記</h1>
-                        <p>紀錄Yun的蘭嶼旅遊的快樂時光</p>
-                    </div>
-                    <div class="intro-text-2">
-                        基本技巧：HTML/CSS/jQuery/RWD<br/>
-                        程式運用：VScode<br>
-                        注意事項：目前本作品暫不開放欣賞。
-                    </div>
-                    <div class="intro-text-3">
-                        製作時間：2022.09.15
-                    </div>
-                    <div class="intro-text-4">
-                        詳細傳送門：<a  href="#">暫不開放</a>
-                    </div>
-                </div>
-            </div>
-            <div class="content show10 animate__animated page-close" id="10" >
-                <div class="href">
-                    <img src="images/jsself.png" alt="">
-                    <a target="_blank" href="https://github.com/sc1314520/JavaScript-self"><div class="content-img-text">
-                        <span class="content-img-text-1">前往頁面</span>
-                    </div></a>
-                </div>
-                <div class="introduction">
-                    <div class="intro-text">
-                        <h1>JavaScript 學習筆記</h1>
-                        <p>在YouTube上學習完整的JavaScript技巧並統整成筆記</p>
-                    </div>
-                    <div class="intro-text-2">
-                        基本技巧：JavaScript<br/>
-                        程式運用：VScode<br>
-                        學習頻道：尚硅谷IT培訓學校<br/>
-                    </div>
-                    <div class="intro-text-3">
-                        製作時間：2022.09.13~2022.10.19
-                    </div>
-                    <div class="intro-text-4">
-                        詳細傳送門：<a target="_blank" href="https://github.com/sc1314520/JavaScript-self">點擊連結</a>
-                    </div>
-                </div>
-            </div>
-        <div class="content show9 animate__animated page-close" id="9" >
-            <div class="href">
-                <img src="images/cert.png" alt="">
-                <a target="_blank" href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=9230CD0C820DD47EF3D54217A6A4EDD5609AC36B30F76316D878FD0E91CA71E6&fbclid=IwAR0vr51vKVbulH1HprnKIG7xrz-rMNyhIuLSowPSK3xYacO_Rh_-6NJhWd4"><div class="content-img-text">
-                    <span class="content-img-text-1">前往頁面</span>
-                </div></a>
-            </div>
-            <div class="introduction">
-                <div class="intro-text">
-                    <h1>Oracle Certified Professional Java SE 11 Developer</h1>
-                    <p>後端程式語言學習過程中第一張專業級國際認證證照</p>
-                </div>
-                <div class="intro-text-2">
-                    基本技巧：Java SE 11<br/>
-                    程式運用：Eclipse<br>
-                    認證單位：Oracle、Pearson VUE<br/>
-                    測驗成績：87% (通過標準：68%)<br/>
-                </div>
-                <div class="intro-text-3">
-                    取得時間：2022.09.03
-                </div>
-                <div class="intro-text-4">
-                    詳細傳送門：<a target="_blank" href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=9230CD0C820DD47EF3D54217A6A4EDD5609AC36B30F76316D878FD0E91CA71E6&fbclid=IwAR0vr51vKVbulH1HprnKIG7xrz-rMNyhIuLSowPSK3xYacO_Rh_-6NJhWd4">點擊連結</a>
-                </div>
             </div>
         </div>
-        <div class="content show8 animate__animated page-close" id="8" >
-            <div class="href">
-                <img src="images/db.png" alt="">
-                <a target="_blank" href="https://github.com/sc1314520/OCPJP_2022-07/tree/main/OCPJP/src/Basic/JDBC_2"><div class="content-img-text">
-                    <span class="content-img-text-1">前往頁面</span>
-                </div></a>
-            </div>
-            <div class="introduction">
-                <div class="intro-text">
-                    <h1>作品五：JDBC 資料庫串連與應用</h1>
-                    <p>利用 Java 與 MySQL 概念進行實作與統整。</p>
-                </div>
-                <div class="intro-text-2">
-                    基本技巧：Java / SQL<br/>
-                    程式運用：Eclipse/MySQL/MySQL Workbench <br>
-                    實作主題：使用者登入系統 / 簡易金流交易系統 <br>
-                    專案特色：利用文件配置的方式設計通用模版運用 <br>
-                </div>
-                <div class="intro-text-3">
-                    製作時間：2022.08.18。
-                </div>
-                <div class="intro-text-4">
-                    作品傳送門：<a target="_blank" href="https://github.com/sc1314520/OCPJP_2022-07/tree/main/OCPJP/src/Basic/JDBC_2">點擊連結</a>
-                </div>
-            </div>
-        </div>
-        <div class="content show7 animate__animated page-close" id="7" >
-            <div class="href">
-                <img src="images/dom.png" alt="">
-                <a target="_blank" href="https://sc1314520.github.io/analyze.github.io/"><div class="content-img-text">
-                    <span class="content-img-text-1">前往頁面</span>
-                </div></a>
-            </div>
-            <div class="introduction">
-                <div class="intro-text">
-                    <h1>作品四：不確定度傳遞計算機網頁版</h1>
-                    <p>利用JavaScript與DOM概念所建立的簡易小工具。</p>
-                </div>
-                <div class="intro-text-2">
-                    基本技巧：JavaScript/DOM<br/>
-                    程式運用：VScode <br>
-                </div>
-                <div class="intro-text-3">
-                    製作時間：2022.07.29。
-                </div>
-                <div class="intro-text-4">
-                    作品傳送門：<a target="_blank" href="https://sc1314520.github.io/analyze.github.io/">點擊連結</a>
-                </div>
-            </div>
-        </div>
-        <div class="content show6 animate__animated page-close" id="6">
-            <div class="href">
-                <img src="images/ocpjp.png" alt="">
-                <a target="_blank" href="https://github.com/sc1314520/OCPJP_2022-07"><div class="content-img-text">
-                    <span class="content-img-text-1">前往頁面</span>
-                </div></a>
-            </div>
-            <div class="introduction">
-                <div class="intro-text">
-                    <h1>技術三：Oracle Certified Professional SE 11</h1>
-                    <p>Java OCPJP SE11 1z0-819 國際級程設專業認證個人資料庫</p>
-                </div>
-                <div class="intro-text-2">
-                    基本技巧：Java OCPJP<br/>
-                    程式運用：Eclipse / Netbeans <br>
-                    版本使用：Java JDK 11<br/>
-                    建立者：SC_Lemon
-                </div>
-                <div class="intro-text-3">
-                    製作時間：2022.07.18~持續中。
-                </div>
-                <div class="intro-text-4">
-                    作品傳送門：<a target="_blank" href="https://github.com/sc1314520/OCPJP_2022-07">點擊連結</a>
-                </div>
-            </div>
-        </div>
-        <div class="content show5 animate__animated page-close" id="5">
-            <div class="href">
-                <img src="images/swing.png" alt="">
-                <a target="_blank" href="https://github.com/sc1314520/Netbeans-Swing"><div class="content-img-text">
-                    <span class="content-img-text-1">前往頁面</span>
-                </div></a>
-            </div>
-            <div class="introduction">
-                <div class="intro-text">
-                    <h1>作品三：Swing 不確定度傳遞計算機</h1>
-                    <p>利用視窗程式解決普物實驗最為痛苦的數據分析過程</p>
-                </div>
-                <div class="intro-text-2">
-                    基本技巧：Java/JFrame事件設計<br/>
-                    程式運用：Netbeans <br>
-                    系統特色：大幅度縮短實驗後所需花費的數據分析時間。<br/>
-                    系統帳號：SCHJ、系統密碼：1314520
-                </div>
-                <div class="intro-text-3">
-                    製作時間：2022.07.27
-                </div>
-                <div class="intro-text-4">
-                    作品傳送門：<a target="_blank" href="https://github.com/sc1314520/Netbeans-Swing">點擊連結</a>
-                </div>
-            </div>
-        </div>
-        <div class="content show4 animate__animated page-close" id="4">
-            <div class="href">
-                <img src="images/four.jpeg" alt="">
-                <a target="_blank" href="https://github.com/SC1314520/RWDrestaurant.github.io/tree/main/Parallax%20Scroller"><div class="content-img-text">
-                    <span class="content-img-text-1">前往頁面</span>
-                </div></a>
-            </div>
-            <div class="introduction">
-                <div class="intro-text">
-                    <h1>技術二：滾動視差網頁設計</h1>
-                    <p>利用動畫效果的方式使得閱覽者在觀看網頁時，擁有視差體驗。</p>
-                </div>
-                <div class="intro-text-2">
-                    基本技巧：CSS/JavaScript/JQuery<br/>
-                    程式運用：VScode<br/>
-                    重點運用：背景固定/矛點滾動/指定位置顯示/進度條動畫/滾動視差效果<br/>
-                </div>
-                <div class="intro-text-3">
-                    製作時間：2022.07.23
-                </div>
-                <div class="intro-text-4">
-                    資源傳送門：<a target="_blank" href="https://github.com/SC1314520/RWDrestaurant.github.io/tree/main/Parallax%20Scroller">點擊連結</a>
-                </div>
-            </div>
-        </div>
-        <div class="content show3 animate__animated page-close" id="3">
-            <div class="href">
-                <img src="images/sass.png" alt="">
-                <a target="_blank" href="https://github.com/SC1314520/RWDrestaurant.github.io/tree/main/SASS"><div class="content-img-text">
-                    <span class="content-img-text-1">前往頁面</span>
-                </div></a>
-            </div>
-            <div class="introduction">
-                <div class="intro-text">
-                    <h1>技術一： SASS/SCSS 彙整</h1>
-                    <p>將以往的 css 撰寫法轉換為簡潔與分類管理的方式編寫。</p>
-                </div>
-                <div class="intro-text-2">
-                    基本技巧：CSS/RWD<br/>
-                    程式運用：Prepros / Sublime <br/>
-                    重點運用：Sass/Scss/mixin/content/$<br/>
-                    額外新增：RWD 熱門斷點 mixin 函式庫。
-                </div>
-                <div class="intro-text-3">
-                    製作時間：2022.07.23
-                </div>
-                <div class="intro-text-4">
-                    資源傳送門：<a target="_blank" href="https://github.com/SC1314520/RWDrestaurant.github.io/tree/main/SASS">點擊連結</a>
-                </div>
-            </div>
-        </div>
-        <div class="content show2 animate__animated page-close" id="2">
-            <div class="href">
-                <img src="images/RWD-W.png" alt="">
-                <a target="_blank" href="https://sc1314520.github.io/RWDrestaurant.github.io/"><div class="content-img-text">
-                    <span class="content-img-text-1">前往頁面</span>
-                </div></a>
-            </div>
-            <div class="introduction">
-                <div class="intro-text">
-                    <h1>作品二：六角西餐廳</h1>
-                    <p>前端工程學習過程中的第一份響應式設計作品</p>
-                </div>
-                <div class="intro-text-2">
-                    基本技巧：RWD<br/>
-                    程式運用：VSCode <br>
-                    重點運用：Responsive Web Design 響應式網頁設計。<br/>
-                    動畫設計：CSS/jQuery等語法運用。<br/>
-                </div>
-                <div class="intro-text-3">
-                    製作時間：2022.07.18~2022.07.19
-                </div>
-                <div class="intro-text-4">
-                    作品傳送門：<a target="_blank" href="https://sc1314520.github.io/RWDrestaurant.github.io/">點擊連結</a>
-                </div>
-            </div>
-        </div>
-        <div class="content show1 animate__animated page-close" id="1">
-            <div class="href">
-                <img src="images/html:css.png" alt="">
-                <a target="_blank" href="https://sc1314520.github.io/SCJ.github.io/"><div class="content-img-text">
-                    <span class="content-img-text-1">前往頁面</span>
-                </div></a>
-            </div>
-            <div class="introduction">
-                <div class="intro-text">
-                    <h1>作品一：六角學院初體驗</h1>
-                    <p>前端工程學習過程中的第一份排版成品</p>
-                </div>
-                <div class="intro-text-2">
-                    基本技巧：HTML/CSS<br/>
-                    程式運用：VSCode <br>
-                    重點運用：Flex排版技巧、Position定位、Table製作、第三方Plugin善用等等。<br/>
-                    動畫設計：CSS/jQuery等語法運用。<br/>
-                </div>
-                <div class="intro-text-3">
-                    製作時間：2022.07.01~2022.07.10
-                </div>
-                <div class="intro-text-4">
-                    作品傳送門：<a target="_blank" href="https://sc1314520.github.io/SCJ.github.io/">點擊連結</a>
-                </div>
-            </div>
-        </div>
-        </div>
+        <!-- -->
         <div class="page">
-            <button class="up" id="up" >上一頁</button>
-            <button class="down" id="down">下一頁</button>
+            <button class="up" id="up" @click="up()">上一頁</button>
+            <button class="down" id="down" @click="down()">下一頁</button>
         </div>
-        <span class="page-c" id="page-c">(目前頁數為：1)</span>
+        <span class="page-c" id="page-c">(目前頁數為：{{page}})</span>
     </div>
     <div class="more-info">
-        <span class="more"><a class="more-a" target="_blank" href="https://drive.google.com/file/d/1CmOZhbUqwPg5Y9loH4RRUEsGyxQBce3f/view?usp=sharing">觀看更多 --></a></span>
-        <h1><a target="_blank" href="https://drive.google.com/file/d/1CmOZhbUqwPg5Y9loH4RRUEsGyxQBce3f/view?usp=sharing">Student's FeedBack</a></h1>
+        <span class="more"><a class="more-a" target="_blank" href="https://drive.google.com/file/d/1BMB_8Zbh5LaKT7yNHsUSbepBZ53g3kMT/view?usp=share_link">觀看更多 --></a></span>
+        <h1><a target="_blank" href="https://drive.google.com/file/d/1BMB_8Zbh5LaKT7yNHsUSbepBZ53g3kMT/view?usp=share_link">Student's FeedBack</a></h1>
         <div class="info-text">
         <div class="feedback">
             <div class="feed-img"><img src="images/person.png" alt=""></div>
@@ -671,6 +295,7 @@
         </div>
     </div>
 </div>
+    </div>
     <div id="contact" class="contact">
         <div class="contact-img"> 
             <img src="images/logo.png" alt="">
@@ -679,11 +304,12 @@
             <span class="contact-title">電子信箱： </span> blc0000421@gmail.com
         </div>
     </div>
-   <script src="https://kit.fontawesome.com/026fbb8b51.js" crossorigin="anonymous"></script>
+</div>
 <script>
     var end =new Date().getMilliseconds();
     var total =Math.abs(end-now);
-    alert("此為[初學]時所創建之簡易電腦版網頁，請使用電腦欣賞。 加載時長："+total+"ms");
+    alert("此為[新版]頁面，採用 VueJS 撰寫，請使用電腦欣賞。 加載時長："+total+"ms");
 </script>
+<script src="https://kit.fontawesome.com/026fbb8b51.js" crossorigin="anonymous"></script>
 </body>
 </html>
