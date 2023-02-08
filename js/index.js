@@ -126,7 +126,6 @@ window.onload=function(){
       data:{
         index:0,
         page:1,
-        content:[[0,1,2],[3,4,5],[6,7,8],[9,10,11],[12,13,14]],
         arr:[all[0],all[1],all[2]],
         search:all,
         sr:'',
@@ -134,6 +133,19 @@ window.onload=function(){
         ocp_flag:false,
         fans_flag:false,
         skill_flag:false,
+      },
+      computed:{
+        content(){
+          var arr=[];
+          var ans=[];
+          for(var i=0 ;i<all.length;i++){
+            arr.push(i)
+          }
+          for(var j=0 ; j<arr.length ;j+=3){
+              ans.push(arr.slice(j,j+3));
+          }
+          return ans;
+        }
       },
       methods:{
         down(){
