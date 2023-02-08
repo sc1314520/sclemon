@@ -9,6 +9,8 @@
     <!-- js -->
     <script src="js/jquery2.2.3.min.js"></script>
     <script src="js/index2.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/ip.js"></script>
     <!-- css -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.css">
@@ -177,6 +179,7 @@
         <div class="contact-img"> 
             <img src="images/logo.png" alt="">
         </div>
+        <div class="ip" id="ip">您的IP位址：<span id="ip-text"></span></div>
         <div class="contact-text">
             <span class="contact-title">電子信箱： </span> blc0000421@gmail.com
         </div>
@@ -185,9 +188,4 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
 <script src="https://kit.fontawesome.com/026fbb8b51.js" crossorigin="anonymous"></script>
-<script>
-    var end =new Date().getMilliseconds();
-    var total =end-now;
-    alert("此為電腦版網頁，請使用電腦欣賞。 加載時長："+total+"ms");
-</script>
 </html>

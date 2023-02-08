@@ -11,6 +11,8 @@
     <script src="js/jquery2.2.3.min.js"></script>
     <script src="js/vue.js"></script>
     <script src="js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/ip.js"></script>
     <!-- css -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -301,6 +303,7 @@
         <div class="contact-img"> 
             <img src="images/logo.png" alt="">
         </div>
+        <div class="ip" id="ip">您的IP位址：<span id="ip-text"></span></div>
         <div class="contact-text">
             <span class="contact-title">電子信箱： </span> blc0000421@gmail.com
         </div>
@@ -309,7 +312,7 @@
 <script>
     var end =new Date().getMilliseconds();
     var total =Math.abs(end-now);
-    alert("此為[新版]頁面，採用 VueJS 撰寫，請使用電腦欣賞。 加載時長："+total+"ms");
+    //alert("此為[新版]頁面，採用 VueJS 撰寫，請使用電腦欣賞。 加載時長："+total+"ms");
 </script>
 <script src="https://kit.fontawesome.com/026fbb8b51.js" crossorigin="anonymous"></script>
 </body>

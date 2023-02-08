@@ -65,6 +65,8 @@
         chart5.draw(data5, options);
       }
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/ip.js"></script>
     <!-- css -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -249,15 +251,11 @@
         <div class="contact-img"> 
             <img src="images/logo.png" alt="">
         </div>
+        <div class="ip" id="ip">您的IP位址：<span id="ip-text"></span></div>
         <div class="contact-text">
             <span class="contact-title">電子信箱： </span> blc0000421@gmail.com
         </div>
     </div>
 </body>
-<script>
-    var end =new Date().getMilliseconds();
-    var total =end-now;
-    alert("此為電腦版網頁，請使用電腦欣賞。 加載時長："+total+"ms");
-</script>
 
 </html>
