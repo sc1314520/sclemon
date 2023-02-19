@@ -1,6 +1,14 @@
 
 window.onload=function(){
     let all=[{
+      id:'16',
+      title:'[GAS串接] 雲端硬碟圖片上傳資料庫',
+      subtitle:'利用 AppScript 與 Ｇoogle Drive / Gmail 串接建立圖片資料庫',
+      paragraph:' 基本技巧：JavaScript/AppScript<br/>程式運用：VScode/Google Drive/ Gmail<br>介紹：上傳完成可以取得一有效網址直接用於img標籤，將圖片呈現在網頁上。<br>製作時間：2023.02.19 <br>',
+      url:'https://sc1314520.github.io/IMG_CLOUD/',
+      img:'images/upload.png'
+    },
+    {
       id:'15',
       title:'[JS 爬蟲] 112學測甄試查詢網站',
       subtitle:'利用 VueJS 搭配 JS 爬蟲所撰寫之網頁',
