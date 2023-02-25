@@ -13,7 +13,7 @@ window.onload=function(){
       title:'[JS 爬蟲] 112學測甄試查詢網站',
       subtitle:'利用 VueJS 搭配 JS 爬蟲所撰寫之網頁',
       paragraph:' 基本技巧：JavaScript/VueJS/AppScript<br/>程式運用：VScode/Google Sheet / CheerIO<br>里程碑記錄：2023/01/06 使用人數達 10000 次 <br>製作時間：2022.12.30 <br>',
-      url:'https://sc1314520.github.io/GSAT-112/',
+      url:'https://github.com/sc1314520/GSAT-112',
       img:'images/sr.png'
     },
     {
