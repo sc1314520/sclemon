@@ -21,7 +21,7 @@ window.onload=function(){
       title:'GAS串接：媽媽便當-訂單系統',
       subtitle:'以自學的方式完成的第一個全端作品',
       paragraph:'基本技巧：JavaScript/VueJS/Fetch/App Script/Google sheet<br/>程式運用：VScode<br>補充要點：製作成簡易 Ｗeb App <br>注意事項：此為手機版網頁（ 375 px ) <br/>製作時間：2022.11.03',
-      url:'https://sc1314520.github.io/lunch.github.io/',
+      url:'https://github.com/sc1314520/lunch.github.io',
       img:'images/ee382621ccb72aa8e10cf1d27e277c253a47c3b9.webp'
     },
     {
