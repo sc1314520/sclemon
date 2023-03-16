@@ -1,6 +1,21 @@
 
 window.onload=function(){
     let all=[{
+      id:'18',
+      title:'NTHU I2P OJ 題庫刷題',
+      subtitle:'C語言演算法訓練',
+      paragraph:'基本技巧：C<br/>程式運用：CLion<br/>介紹：修習清大資工系程設課程訓練<br/>取得時間：2023.02.13',
+      url:'https://github.com/sc1314520/NTHU_I2P',
+      img:'images/nthucs.png'
+    },{
+      id:'17',
+      title:'OCP Java EE 7 Application Developer ',
+      subtitle:'Java進階甲級國際認證',
+      paragraph:'基本技巧：Java EE 7<br/>程式運用：Eclipse<br>認證單位：Oracle<br/>測驗成績：82% (通過標準：66%)<br/>取得時間：2023.02.20',
+      url:'https://catalog-education.oracle.com/pls/certview/sharebadge?id=1C810492ECBD518A16EA7BA7FBF72CAA926F16825ABE67213ECD55252484D5E7&fbclid=IwAR2oL5gCcu6J1JwKYQDTW0VpQXNYrLKNlxxcdscCyjzHShFE08YBm66UX0w',
+      img:'images/ee7-c.png'
+    },
+    {
       id:'16',
       title:'[GAS串接] 雲端硬碟圖片上傳資料庫',
       subtitle:'利用 AppScript 與 Ｇoogle Drive / Gmail 串接建立圖片資料庫',
